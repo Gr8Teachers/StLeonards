@@ -27,7 +27,7 @@ header{position:sticky;top:0;z-index:20;background:#fff;border-bottom:1px solid 
 .nav ul{display:flex;list-style:none;gap:28px;align-items:center}
 .nav ul a{text-decoration:none;font-weight:600;font-size:.95rem;color:var(--muted)}
 .nav ul a:hover{color:var(--red)}
-.btn{display:inline-flex;align-items:center;gap:.5em;text-decoration:none;font-weight:600;border-radius:999px;padding:.75em 1.5em;font-size:1rem;transition:.15s;border:2px solid transparent;cursor:pointer}
+.btn{white-space:nowrap;display:inline-flex;align-items:center;gap:.5em;text-decoration:none;font-weight:600;border-radius:999px;padding:.75em 1.5em;font-size:1rem;transition:.15s;border:2px solid transparent;cursor:pointer}
 .btn-red{background:var(--red);color:#fff}.btn-red:hover{background:var(--red-dark)}
 .btn-white{background:#fff;color:var(--red)}.btn-white:hover{background:#f3dfe5}
 .btn-ghost{border-color:#fff;color:#fff}.btn-ghost:hover{background:rgba(255,255,255,.12)}
@@ -137,6 +137,33 @@ footer em{color:#d6dce0}
 .print-only{display:none}
 @media (max-width:620px){ .hide-sm{display:none} .nav ul{gap:8px} }
 
+
+/* Language menu */
+.lang{position:relative}
+.lang details{position:relative}
+.lang summary{list-style:none;cursor:pointer;user-select:none}
+.lang summary::-webkit-details-marker{display:none}
+.lang summary svg{width:1.25em;height:1.25em}
+.lang-panel{position:absolute;right:0;top:calc(100% + 10px);width:min(520px,92vw);max-height:70vh;overflow:auto;background:#fff;border:1px solid var(--line);border-radius:14px;box-shadow:0 18px 50px rgba(20,30,50,.18);padding:16px;z-index:50}
+.lang-title{font-family:"Poppins",sans-serif;font-weight:600;font-size:1rem;margin:2px 4px 10px}
+.lang-panel ul{list-style:none;display:grid !important;grid-template-columns:1fr 1fr;gap:4px !important}
+.lang-panel a{display:flex;flex-direction:column;padding:8px 10px;border-radius:8px;text-decoration:none;color:var(--ink) !important;line-height:1.25}
+.lang-panel a:hover,.lang-panel a:focus{background:#fbeef2;outline:none}
+.lang-panel .ln{font-weight:600;font-size:1.02rem}
+.lang-panel .le{font-size:.8rem;color:var(--muted)}
+.lang-panel .lang-en{grid-column:1/-1;border-bottom:1px solid var(--line);padding-bottom:4px;margin-bottom:4px}
+.lang-note{font-size:.78rem;color:var(--muted);margin:10px 4px 0}
+@media (max-width:620px){
+  .nav ul button.btn{padding:.55em .75em}
+  .nav{padding:0 12px;gap:6px}
+  .nav img{height:26px !important}
+  .nav .btn{font-size:.85rem}
+  .lang summary{padding:.55em .85em}
+  .nav ul{gap:6px !important}
+  .lang summary svg{width:1.1em;height:1.1em}
+  .lang-panel{position:fixed;left:4vw;right:4vw;top:76px;width:auto}
+}
+
 /* ---------- Print: one-page A4 flyer ---------- */
 @page{size:A4;margin:0}
 @media print{
@@ -210,8 +237,53 @@ footer em{color:#d6dce0}
       <li class="link"><a href="#offer">What we offer</a></li>
       <li class="link"><a href="#info-day">Info day</a></li>
       <li class="link"><a href="#contact">Contact</a></li>
-      <li><button class="btn btn-outline" type="button" onclick="window.print()" aria-label="Print this flyer"><svg viewBox="0 0 24 24"><path d="M6 2h12v5H6zm-2 6h16a2 2 0 0 1 2 2v7h-4v5H6v-5H2v-7a2 2 0 0 1 2-2zm4 9v3h8v-5H8zm10-6.5a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/></svg>Print</button></li>
-      <li><a class="btn btn-red" href="tel:+61279206475">Call<span class="hide-sm">&nbsp;7920 6475</span></a></li>
+      <li><button class="btn btn-outline" type="button" onclick="window.print()" aria-label="Print this flyer"><svg viewBox="0 0 24 24"><path d="M6 2h12v5H6zm-2 6h16a2 2 0 0 1 2 2v7h-4v5H6v-5H2v-7a2 2 0 0 1 2-2zm4 9v3h8v-5H8zm10-6.5a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/></svg><span class="hide-sm">Print</span></button></li>
+      <li class="lang">
+        <details id="langMenu">
+          <summary class="btn btn-red" aria-label="Translate this page – choose your language"><svg viewBox="0 0 24 24"><path d="M12.9 15.1 10.3 12.6l.1-.1A17.4 17.4 0 0 0 14 6h3V4h-7V2H8v2H1v2h11.2A15.7 15.7 0 0 1 9 11.4 15.6 15.6 0 0 1 6.7 8H4.7a17.6 17.6 0 0 0 2.9 4.5l-5.1 5L4 19l5-5 3.1 3.1zM18.5 10h-2L12 22h2l1.1-3h4.8l1.1 3h2zm-2.6 7 1.6-4.3 1.6 4.3z"/></svg><span>Your language</span></summary>
+          <div class="lang-panel">
+            <p class="lang-title">Choose your language</p>
+            <ul>
+          <li class="lang-en"><a href="#" data-lang="en"><span class="ln">English</span><span class="le">Original</span></a></li>
+          <li><a href="#" data-lang="ar" lang="ar"><span class="ln">العربية</span><span class="le">Arabic</span></a></li>
+          <li><a href="#" data-lang="fa" lang="fa"><span class="ln">فارسی / دری</span><span class="le">Persian / Dari</span></a></li>
+          <li><a href="#" data-lang="ps" lang="ps"><span class="ln">پښتو</span><span class="le">Pashto</span></a></li>
+          <li><a href="#" data-lang="zh-CN" lang="zh-CN"><span class="ln">简体中文</span><span class="le">Chinese (Simplified)</span></a></li>
+          <li><a href="#" data-lang="zh-TW" lang="zh-TW"><span class="ln">繁體中文</span><span class="le">Chinese (Traditional)</span></a></li>
+          <li><a href="#" data-lang="vi" lang="vi"><span class="ln">Tiếng Việt</span><span class="le">Vietnamese</span></a></li>
+          <li><a href="#" data-lang="ko" lang="ko"><span class="ln">한국어</span><span class="le">Korean</span></a></li>
+          <li><a href="#" data-lang="ja" lang="ja"><span class="ln">日本語</span><span class="le">Japanese</span></a></li>
+          <li><a href="#" data-lang="th" lang="th"><span class="ln">ไทย</span><span class="le">Thai</span></a></li>
+          <li><a href="#" data-lang="my" lang="my"><span class="ln">မြန်မာ</span><span class="le">Burmese</span></a></li>
+          <li><a href="#" data-lang="km" lang="km"><span class="ln">ខ្មែរ</span><span class="le">Khmer</span></a></li>
+          <li><a href="#" data-lang="id" lang="id"><span class="ln">Bahasa Indonesia</span><span class="le">Indonesian</span></a></li>
+          <li><a href="#" data-lang="tl" lang="tl"><span class="ln">Filipino</span><span class="le">Filipino / Tagalog</span></a></li>
+          <li><a href="#" data-lang="ne" lang="ne"><span class="ln">नेपाली</span><span class="le">Nepali</span></a></li>
+          <li><a href="#" data-lang="hi" lang="hi"><span class="ln">हिन्दी</span><span class="le">Hindi</span></a></li>
+          <li><a href="#" data-lang="pa" lang="pa"><span class="ln">ਪੰਜਾਬੀ</span><span class="le">Punjabi</span></a></li>
+          <li><a href="#" data-lang="ur" lang="ur"><span class="ln">اردو</span><span class="le">Urdu</span></a></li>
+          <li><a href="#" data-lang="bn" lang="bn"><span class="ln">বাংলা</span><span class="le">Bengali</span></a></li>
+          <li><a href="#" data-lang="ta" lang="ta"><span class="ln">தமிழ்</span><span class="le">Tamil</span></a></li>
+          <li><a href="#" data-lang="si" lang="si"><span class="ln">සිංහල</span><span class="le">Sinhala</span></a></li>
+          <li><a href="#" data-lang="mn" lang="mn"><span class="ln">Монгол</span><span class="le">Mongolian</span></a></li>
+          <li><a href="#" data-lang="ru" lang="ru"><span class="ln">Русский</span><span class="le">Russian</span></a></li>
+          <li><a href="#" data-lang="uk" lang="uk"><span class="ln">Українська</span><span class="le">Ukrainian</span></a></li>
+          <li><a href="#" data-lang="tr" lang="tr"><span class="ln">Türkçe</span><span class="le">Turkish</span></a></li>
+          <li><a href="#" data-lang="el" lang="el"><span class="ln">Ελληνικά</span><span class="le">Greek</span></a></li>
+          <li><a href="#" data-lang="es" lang="es"><span class="ln">Español</span><span class="le">Spanish</span></a></li>
+          <li><a href="#" data-lang="pt" lang="pt"><span class="ln">Português</span><span class="le">Portuguese</span></a></li>
+          <li><a href="#" data-lang="fr" lang="fr"><span class="ln">Français</span><span class="le">French</span></a></li>
+          <li><a href="#" data-lang="it" lang="it"><span class="ln">Italiano</span><span class="le">Italian</span></a></li>
+          <li><a href="#" data-lang="am" lang="am"><span class="ln">አማርኛ</span><span class="le">Amharic</span></a></li>
+          <li><a href="#" data-lang="ti" lang="ti"><span class="ln">ትግርኛ</span><span class="le">Tigrinya</span></a></li>
+          <li><a href="#" data-lang="sw" lang="sw"><span class="ln">Kiswahili</span><span class="le">Swahili</span></a></li>
+          <li><a href="#" data-lang="so" lang="so"><span class="ln">Soomaali</span><span class="le">Somali</span></a></li>
+          <li><a href="#" data-lang="ku" lang="ku"><span class="ln">Kurdî</span><span class="le">Kurdish</span></a></li>
+            </ul>
+            <p class="lang-note">Translated by Google Translate. Some words may not be exact.</p>
+          </div>
+        </details>
+      </li>
     </ul>
   </div>
 </header>
@@ -311,5 +383,25 @@ footer em{color:#d6dce0}
   </div>
 </footer>
 
+<script>
+(function(){
+  var SITE="https://gr8teachers.github.io/StLeonards/";
+  function proxyUrl(lang){
+    var h=location.hostname;
+    if(lang==="en") return SITE;
+    if(/\.translate\.goog$/.test(h)) h=h.replace(/\.translate\.goog$/,"").replace(/--/g,"\u0000").replace(/-/g,".").replace(/\u0000/g,"-");
+    if(!h||location.protocol==="file:") return "https://translate.google.com/translate?sl=en&tl="+lang+"&u="+encodeURIComponent(SITE);
+    var p=h.replace(/-/g,"--").replace(/\./g,"-")+".translate.goog";
+    var path=location.pathname.replace(/[^/]*$/,"");
+    return "https://"+p+path+"?_x_tr_sl=en&_x_tr_tl="+lang+"&_x_tr_hl="+lang+"&_x_tr_pto=wapp";
+  }
+  document.querySelectorAll(".lang-panel a[data-lang]").forEach(function(a){
+    a.href=proxyUrl(a.getAttribute("data-lang"));
+  });
+  var d=document.getElementById("langMenu");
+  document.addEventListener("click",function(e){ if(d.open && !d.contains(e.target)) d.open=false; });
+  document.addEventListener("keydown",function(e){ if(e.key==="Escape") d.open=false; });
+})();
+</script>
 </body>
 </html>
