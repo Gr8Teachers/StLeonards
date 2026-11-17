@@ -222,6 +222,21 @@ h1,h2,h3,.pill,.btn{overflow-wrap:break-word}
   .hero .btn,.date-card .btn,#enqBtn{white-space:normal;text-align:center}
 }
 
+/* Embedded Microsoft Form (screen) / QR code (print) */
+.print-qr{display:none}
+.contact{grid-template-columns:1fr 1.25fr;align-items:start}
+.msform{background:#fff;border:1px solid var(--line);border-top:5px solid var(--red);border-radius:var(--radius);padding:24px;box-shadow:0 12px 40px rgba(20,30,50,.08)}
+.msform-head{display:flex;gap:14px;align-items:flex-start;margin-bottom:14px}
+.msform-head .icon{margin:0;flex:none}
+.msform-head h3{font-size:1.5rem;font-weight:700;line-height:1.2}
+.msform-head p{color:var(--muted);margin-top:4px}
+.msform iframe{display:block;width:100%;height:1050px;border:0;border-radius:10px;background:var(--bg)}
+.msform-open{display:inline-block;margin-top:12px;color:var(--red);font-weight:600;text-decoration:none}
+.msform-open:hover{text-decoration:underline}
+@media (max-width:900px){.contact{grid-template-columns:1fr}.msform iframe{height:1150px}}
+@media (max-width:620px){.msform{padding:16px}.msform iframe{height:1250px}}
+@media print{.print-qr{display:flex !important}.msform{display:none !important}}
+
 /* ---------- Print: one-page A4 flyer ---------- */
 @page{size:A4;margin:0}
 @media print{
@@ -405,44 +420,6 @@ h1,h2,h3,.pill,.btn{overflow-wrap:break-word}
     </div>
   </section>
 
-  <!-- Online enquiry -->
-  <section id="enquiry">
-    <div class="wrap">
-      <div class="enq" id="enqBox">
-        <div class="enq-head">
-          <div class="icon"><svg viewBox="0 0 24 24"><path d="M2 5h20v14H2zm2 2v.5l8 5 8-5V7l-8 5z"/></svg></div>
-          <h2>இணைய விசாரணை</h2>
-          <p>உங்கள் விவரங்களைத் தாருங்கள், எங்கள் குழு உங்களைத் தொடர்புகொள்ளும்.</p>
-        </div>
-        <form id="enqForm" action="https://formsubmit.co/esolstleonards@tafensw.edu.au" method="POST">
-          <input type="text" name="_honey" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
-          <div class="fgrid">
-            <label class="fld"><span>முழுப் பெயர் <b aria-hidden="true">*</b></span><input name="Name" type="text" required autocomplete="name" maxlength="100"></label>
-            <label class="fld"><span>கைபேசி எண் <b aria-hidden="true">*</b></span><input name="Mobile number" type="tel" required autocomplete="tel" inputmode="tel" pattern="[0-9 +()\-]{8,20}" maxlength="20" dir="ltr" placeholder="04xx xxx xxx"></label>
-            <label class="fld"><span>மின்னஞ்சல்</span><input name="email" type="email" autocomplete="email" maxlength="120" dir="ltr"></label>
-            <label class="fld"><span>விசா நிலை <b aria-hidden="true">*</b></span><select name="Visa status" required>
-              <option value="" selected disabled>தேர்ந்தெடுக்கவும்</option>
-              <option value="Australian citizen">ஆஸ்திரேலியக் குடிமகன்</option>
-              <option value="New Zealand citizen">நியூசிலாந்துக் குடிமகன்</option>
-              <option value="Permanent resident (PR)">நிரந்தர வதிவாளர் (PR)</option>
-              <option value="Temporary resident (TR)">தற்காலிக வதிவாளர் (TR)</option>
-              <option value="Bridging visa">பிரிட்ஜிங் விசா (Bridging)</option>
-              <option value="Visitor visa">வருகையாளர் விசா</option>
-              <option value="Other">மற்றவை</option>
-            </select></label>
-          </div>
-          <p class="fnote">ஆங்கில வகுப்புகள் பற்றி உங்களைத் தொடர்புகொள்ள மட்டுமே உங்கள் விவரங்களைப் பயன்படுத்துவோம்.</p>
-          <button class="btn btn-red" type="submit" id="enqBtn"><svg viewBox="0 0 24 24"><path d="M2 21 23 12 2 3v7l15 2-15 2z"/></svg><span>அனுப்பு</span></button>
-          <p class="fstatus" id="enqStatus" role="status" aria-live="polite"></p>
-        </form>
-        <div class="enq-done" id="enqDone" hidden>
-          <div class="tick"><svg viewBox="0 0 24 24"><path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg></div>
-          <p>நன்றி! உங்கள் விவரங்கள் கிடைத்தன, விரைவில் உங்களைத் தொடர்புகொள்வோம்.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <!-- Contact -->
   <section id="contact">
     <div class="wrap contact">
@@ -455,10 +432,18 @@ h1,h2,h3,.pill,.btn{overflow-wrap:break-word}
           <li><span class="ci"><svg viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7zm0 9.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg></span><div><small>முகவரி</small><a dir="ltr" href="https://www.google.com/maps/search/?api=1&query=213+Pacific+Hwy+St+Leonards+NSW+2065" target="_blank" rel="noopener">Building P, Level 4, P4.02<br>213 Pacific Hwy, St Leonards NSW 2065</a></div></li>
         </ul>
       </div>
-      <div class="qr-box">
+      <div class="qr-box print-qr">
         <img src="../assets/qr.png" alt="QR code">
         <h3>ஸ்கேன் செய்யுங்கள்</h3>
         <p>மேலும் தகவலுக்கு உங்கள் தொலைபேசி கேமராவால் ஸ்கேன் செய்யுங்கள்.</p>
+      </div>
+      <div class="msform" id="enquiry">
+        <div class="msform-head">
+          <div class="icon"><svg viewBox="0 0 24 24"><path d="M2 5h20v14H2zm2 2v.5l8 5 8-5V7l-8 5z"/></svg></div>
+          <div><h3>இணைய விசாரணை</h3><p>உங்கள் விவரங்களைத் தாருங்கள், எங்கள் குழு உங்களைத் தொடர்புகொள்ளும்.</p></div>
+        </div>
+        <iframe src="https://forms.office.com/r/xY44v3tmUZ?embed=true" title="இணைய விசாரணை" loading="lazy" allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen></iframe>
+        <a class="msform-open" href="https://forms.office.com/r/xY44v3tmUZ" target="_blank" rel="noopener">படிவம் தெரியவில்லையா? புதிய தாவலில் திறக்கவும் <span aria-hidden="true">&#8599;</span></a>
       </div>
     </div>
   </section>
@@ -478,40 +463,6 @@ h1,h2,h3,.pill,.btn{overflow-wrap:break-word}
   document.addEventListener("click",function(e){ if(d.open && !d.contains(e.target)) d.open=false; });
   document.addEventListener("keydown",function(e){ if(e.key==="Escape") d.open=false; });
 })();
-(function(){
-  var f=document.getElementById("enqForm"); if(!f) return;
-  var btn=document.getElementById("enqBtn"), st=document.getElementById("enqStatus");
-  var ENDPOINT="https://formsubmit.co/ajax/esolstleonards@tafensw.edu.au";
-  var MSG={sending:"\u0b85\u0ba9\u0bc1\u0baa\u0bcd\u0baa\u0baa\u0bcd\u0baa\u0b9f\u0bc1\u0b95\u0bbf\u0bb1\u0ba4\u0bc1\u2026",error:"\u0bae\u0ba9\u0bcd\u0ba9\u0bbf\u0b95\u0bcd\u0b95\u0bb5\u0bc1\u0bae\u0bcd, \u0b89\u0b99\u0bcd\u0b95\u0bb3\u0bcd \u0bb5\u0bbf\u0b9a\u0bbe\u0bb0\u0ba3\u0bc8\u0baf\u0bc8 \u0b85\u0ba9\u0bc1\u0baa\u0bcd\u0baa \u0bae\u0bc1\u0b9f\u0bbf\u0baf\u0bb5\u0bbf\u0bb2\u0bcd\u0bb2\u0bc8. \u0ba4\u0baf\u0bb5\u0bc1\u0b9a\u0bc6\u0baf\u0bcd\u0ba4\u0bc1 \u0b8e\u0b99\u0bcd\u0b95\u0bb3\u0bc8 \u0b85\u0bb4\u0bc8\u0baf\u0bc1\u0b99\u0bcd\u0b95\u0bb3\u0bcd \u0b85\u0bb2\u0bcd\u0bb2\u0ba4\u0bc1 \u0bae\u0bbf\u0ba9\u0bcd\u0ba9\u0b9e\u0bcd\u0b9a\u0bb2\u0bcd \u0b85\u0ba9\u0bc1\u0baa\u0bcd\u0baa\u0bc1\u0b99\u0bcd\u0b95\u0bb3\u0bcd."};
-  f.addEventListener("submit",function(e){
-    e.preventDefault();
-    if(!f.reportValidity()) return;
-    var data={};
-    new FormData(f).forEach(function(v,k){ data[k]=String(v).trim(); });
-    if(data._honey){ done(); return; }
-    delete data._honey;
-    data["Page language"]="Tamil";
-    data["Submitted"]=new Date().toLocaleString("en-AU",{timeZone:"Australia/Sydney"});
-    data._subject="New English class enquiry – St Leonards ("+"Tamil"+" page)";
-    data._template="table";
-    data._captcha="false";
-    if(!data.email) delete data.email;
-    btn.disabled=true; st.className="fstatus"; st.textContent=MSG.sending;
-    fetch(ENDPOINT,{method:"POST",headers:{"Content-Type":"application/json","Accept":"application/json"},body:JSON.stringify(data)})
-      .then(function(r){ return r.json().catch(function(){ return {}; }).then(function(j){ return {ok:r.ok,j:j}; }); })
-      .then(function(res){
-        if(res.ok && String(res.j.success)==="true"){ done(); }
-        else { fail(); }
-      })
-      .catch(fail);
-  });
-  function done(){
-    f.hidden=true; document.getElementById("enqDone").hidden=false;
-    document.getElementById("enqBox").scrollIntoView({behavior:"smooth",block:"center"});
-  }
-  function fail(){ btn.disabled=false; st.className="fstatus err"; st.textContent=MSG.error; }
-})();
-
 </script>
 </body>
 </html>

@@ -92,11 +92,18 @@ html[lang="my"] body,html[lang="km"] body{line-height:1.85}
 '''
 t=t.replace('/* ---------- Print: one-page A4 flyer ---------- */',extra+'\n/* ---------- Print: one-page A4 flyer ---------- */',1)
 t=t.replace('  body{zoom:.86}','  body{zoom:{{ZOOM}}}')
-import sys; sys.path.insert(0,'/home/claude/build'); from form_patch import FORM_HTML, FORM_CSS, FORM_JS
+import sys; sys.path.insert(0,'/home/claude/build'); from form_patch import FORM_HTML, FORM_CSS, FORM_JS, MSFORM_HTML, MSFORM_CSS
 assert '  <!-- Contact -->' in t
 t=t.replace('  <!-- Contact -->', FORM_HTML+'  <!-- Contact -->')
 t=t.replace('<a class="btn btn-ghost" href="#contact">{{btn_contact}}</a>','<a class="btn btn-ghost" href="#enquiry">{{btn_contact}}</a>')
-t=t.replace('/* ---------- Print: one-page A4 flyer ---------- */', FORM_CSS+'\n/* ---------- Print: one-page A4 flyer ---------- */',1)
+old_qr='''      <div class="qr-box">
+        <img src="{{A}}assets/qr.png" alt="QR code">
+        <h3>{{qr_h}}</h3>
+        <p>{{qr_p}}</p>
+      </div>'''
+assert old_qr in t
+t=t.replace(old_qr, MSFORM_HTML)
+t=t.replace('/* ---------- Print: one-page A4 flyer ---------- */', FORM_CSS+MSFORM_CSS+'\n/* ---------- Print: one-page A4 flyer ---------- */',1)
 t=t.replace('  document.addEventListener("keydown",function(e){ if(e.key==="Escape") d.open=false; });\n})();','  document.addEventListener("keydown",function(e){ if(e.key==="Escape") d.open=false; });\n})();'+FORM_JS)
 t=t.replace('"Poppins",sans-serif','"Poppins","Open Sans","TAFE Script",sans-serif').replace('"Open Sans",sans-serif','"Open Sans","TAFE Script",sans-serif')
 open('/home/claude/build/template.html','w').write(t)

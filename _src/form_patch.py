@@ -115,3 +115,37 @@ FORM_JS = '''
   function fail(){ btn.disabled=false; st.className="fstatus err"; st.textContent=MSG.error; }
 })();
 '''
+
+# ---- Switched to Microsoft Forms (embedded on screen, QR code on print) ----
+MSFORM_URL = "https://forms.office.com/r/xY44v3tmUZ"
+FORM_HTML = ''   # FormSubmit form removed
+FORM_JS = ''
+MSFORM_HTML = '''      <div class="qr-box print-qr">
+        <img src="{{A}}assets/qr.png" alt="QR code">
+        <h3>{{qr_h}}</h3>
+        <p>{{qr_p}}</p>
+      </div>
+      <div class="msform" id="enquiry">
+        <div class="msform-head">
+          <div class="icon"><svg viewBox="0 0 24 24"><path d="M2 5h20v14H2zm2 2v.5l8 5 8-5V7l-8 5z"/></svg></div>
+          <div><h3>{{form_h}}</h3><p>{{form_sub}}</p></div>
+        </div>
+        <iframe src="''' + MSFORM_URL + '''?embed=true" title="{{form_h}}" loading="lazy" allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen></iframe>
+        <a class="msform-open" href="''' + MSFORM_URL + '''" target="_blank" rel="noopener">{{f_open}} <span aria-hidden="true">&#8599;</span></a>
+      </div>'''
+MSFORM_CSS = '''
+/* Embedded Microsoft Form (screen) / QR code (print) */
+.print-qr{display:none}
+.contact{grid-template-columns:1fr 1.25fr;align-items:start}
+.msform{background:#fff;border:1px solid var(--line);border-top:5px solid var(--red);border-radius:var(--radius);padding:24px;box-shadow:0 12px 40px rgba(20,30,50,.08)}
+.msform-head{display:flex;gap:14px;align-items:flex-start;margin-bottom:14px}
+.msform-head .icon{margin:0;flex:none}
+.msform-head h3{font-size:1.5rem;font-weight:700;line-height:1.2}
+.msform-head p{color:var(--muted);margin-top:4px}
+.msform iframe{display:block;width:100%;height:1050px;border:0;border-radius:10px;background:var(--bg)}
+.msform-open{display:inline-block;margin-top:12px;color:var(--red);font-weight:600;text-decoration:none}
+.msform-open:hover{text-decoration:underline}
+@media (max-width:900px){.contact{grid-template-columns:1fr}.msform iframe{height:1150px}}
+@media (max-width:620px){.msform{padding:16px}.msform iframe{height:1250px}}
+@media print{.print-qr{display:flex !important}.msform{display:none !important}}
+'''
