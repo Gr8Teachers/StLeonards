@@ -38,7 +38,7 @@ for k, (w, bus) in F.items():
     t1 = w.replace('{n}', '5').replace('{p}', P('St Leonards Train'))
     t2 = w.replace('{n}', '8').replace('{p}', P('Crows Nest Metro'))
     if k == 'en':
-        t1 = '5-minute walk from St Leonards Train'; t2 = '8-minute walk from Crows Nest Metro'
+        t1 = '5 min walk from St Leonards Train'; t2 = '8 min walk from Crows Nest Metro'
     if k == 'ru': t1 = t1.replace('5 минут', '5 минут'); t2 = t2.replace('8 минут', '8 минут')
     out[k] = {'tr1': t1, 'tr2': t2, 'tr3': bus}
 ROOT = os.path.dirname(os.path.abspath(__file__))

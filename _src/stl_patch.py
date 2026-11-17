@@ -109,7 +109,7 @@ CSS2 = """
 }
 @media (max-width:620px){
   .dc-side{flex-direction:column;align-items:center}
-  .date-card p.walk{white-space:normal;display:block;text-align:center}
+  .date-card p.walk{white-space:normal;display:block;text-align:center;font-size:clamp(.8rem,3.7vw,1rem)}
   .date-card p.walk svg{display:inline-block;vertical-align:-.15em;margin-inline-end:.4em}
   .dc-side .btn{width:100%;justify-content:center}
 }
