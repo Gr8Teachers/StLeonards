@@ -33,3 +33,40 @@ out = {k: dict(zip(['s3_t', 's3_d', 's4_t', 's4_d'], v)) for k, v in T.items()}
 assert len(out) == 28 and all(len(v) == 4 for v in out.values())
 json.dump(out, open('y_steps.json', 'w', encoding='utf-8'), ensure_ascii=False, indent=0)
 print('ok', len(out))
+
+# Step 2 wording (updated)
+S2 = {
+"en": "One of our Customer Service Officers (CSO) will check your visa or passport information to confirm your eligibility.",
+"ar": "سيتحقق أحد موظفي خدمة العملاء (CSO) من معلومات تأشيرتك أو جواز سفرك لتأكيد أهليتك.",
+"prs": "یکی از کارمندان خدمات مشتریان ما (CSO) معلومات ویزا یا پاسپورت شما را بررسی می‌کند تا واجد شرایط بودن شما را تأیید کند.",
+"fa": "یکی از کارمندان خدمات مشتریان ما (CSO) اطلاعات ویزا یا گذرنامه شما را بررسی می‌کند تا شرایط پذیرش شما را تأیید کند.",
+"ps": "زموږ د پېرودونکو د خدمتونو یو کارکوونکی (CSO) به ستاسو د ویزې یا پاسپورټ معلومات وګوري ترڅو ستاسو وړتیا تایید کړي.",
+"ckb": "یەکێک لە کارمەندانی خزمەتگوزاریی کڕیارانمان (CSO) زانیاریی ڤیزا یان پاسپۆرتەکەت دەپشکنێت بۆ پشتڕاستکردنەوەی شیاویت.",
+"ur": "ہمارا ایک کسٹمر سروس آفیسر (CSO) آپ کی اہلیت کی تصدیق کے لیے آپ کے ویزا یا پاسپورٹ کی معلومات چیک کرے گا۔",
+"kmr": "Yek ji Karmendên me yên Xizmeta Xerîdaran (CSO) dê agahiyên vîze an pasaporta we kontrol bike da ku mafdariya we piştrast bike.",
+"tr": "Müşteri Hizmetleri Görevlilerimizden (CSO) biri, uygunluğunuzu doğrulamak için vize veya pasaport bilgilerinizi kontrol eder.",
+"zh": "我们的客户服务专员 (CSO) 会查看您的签证或护照信息，以确认您的资格。",
+"ja": "カスタマーサービス担当者（CSO）がビザまたはパスポートの情報を確認し、受講資格を確かめます。",
+"ko": "고객 서비스 담당자(CSO)가 비자 또는 여권 정보를 확인하여 수강 자격을 확인합니다.",
+"mn": "Манай Харилцагчийн үйлчилгээний ажилтан (CSO) таны тэнцэх эсэхийг батлахын тулд виз эсвэл паспортын мэдээллийг шалгана.",
+"my": "ကျွန်ုပ်တို့၏ ဖောက်သည်ဝန်ဆောင်မှုအရာရှိ (CSO) တစ်ဦးက သင်၏ အရည်အချင်းပြည့်မီမှုကို အတည်ပြုရန် သင့်ဗီဇာ သို့မဟုတ် နိုင်ငံကူးလက်မှတ် အချက်အလက်များကို စစ်ဆေးပါမည်။",
+"km": "មន្ត្រីសេវាអតិថិជន (CSO) ម្នាក់របស់យើងនឹងពិនិត្យព័ត៌មានទិដ្ឋាការ ឬលិខិតឆ្លងដែនរបស់អ្នក ដើម្បីបញ្ជាក់សិទ្ធិរបស់អ្នក។",
+"th": "เจ้าหน้าที่บริการลูกค้า (CSO) ของเราจะตรวจสอบข้อมูลวีซ่าหรือหนังสือเดินทางของคุณเพื่อยืนยันคุณสมบัติ",
+"vi": "Một Nhân viên Dịch vụ Khách hàng (CSO) của chúng tôi sẽ kiểm tra thông tin thị thực hoặc hộ chiếu để xác nhận điều kiện của bạn.",
+"id": "Salah satu Petugas Layanan Pelanggan (CSO) kami akan memeriksa informasi visa atau paspor Anda untuk memastikan kelayakan Anda.",
+"hi": "हमारे ग्राहक सेवा अधिकारी (CSO) आपकी पात्रता की पुष्टि के लिए आपके वीज़ा या पासपोर्ट की जानकारी जाँचेंगे।",
+"ne": "हाम्रा ग्राहक सेवा अधिकृत (CSO) मध्ये एकले तपाईंको योग्यता पुष्टि गर्न तपाईंको भिसा वा राहदानीको विवरण जाँच्नुहुनेछ।",
+"pa": "ਸਾਡਾ ਇੱਕ ਗਾਹਕ ਸੇਵਾ ਅਧਿਕਾਰੀ (CSO) ਤੁਹਾਡੀ ਯੋਗਤਾ ਦੀ ਪੁਸ਼ਟੀ ਲਈ ਤੁਹਾਡੇ ਵੀਜ਼ਾ ਜਾਂ ਪਾਸਪੋਰਟ ਦੀ ਜਾਣਕਾਰੀ ਜਾਂਚੇਗਾ।",
+"ta": "எங்கள் வாடிக்கையாளர் சேவை அலுவலர் (CSO) ஒருவர் உங்கள் தகுதியை உறுதிசெய்ய உங்கள் விசா அல்லது கடவுச்சீட்டுத் தகவலைச் சரிபார்ப்பார்.",
+"ru": "Один из наших специалистов по обслуживанию клиентов (CSO) проверит данные вашей визы или паспорта, чтобы подтвердить ваше право на обучение.",
+"uk": "Один із наших фахівців з обслуговування клієнтів (CSO) перевірить дані вашої візи або паспорта, щоб підтвердити ваше право на навчання.",
+"es": "Uno de nuestros Oficiales de Atención al Cliente (CSO) revisará la información de tu visa o pasaporte para confirmar que cumples los requisitos.",
+"pt": "Um dos nossos Atendentes (CSO) verificará as informações do seu visto ou passaporte para confirmar sua elegibilidade.",
+"sw": "Mmoja wa Maafisa wetu wa Huduma kwa Wateja (CSO) atakagua taarifa za viza au pasipoti yako ili kuthibitisha ustahiki wako.",
+"ti": "ሓደ ካብ ሰራሕተኛታት ኣገልግሎት ዓማዊልና (CSO) ብቕዓትኩም ንምርግጋጽ ሓበሬታ ቪዛ ወይ ፓስፖርትኩም ክርኢ እዩ።",
+}
+assert len(S2) == 28
+for k, v in S2.items():
+    out[k]['s2_d'] = v
+json.dump(out, open('y_steps.json', 'w', encoding='utf-8'), ensure_ascii=False, indent=0)
+print('step 2 added')
