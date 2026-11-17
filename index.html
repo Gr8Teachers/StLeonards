@@ -138,10 +138,11 @@ footer em{color:#d6dce0}
 @media (max-width:620px){ .hide-sm{display:none} .nav ul{gap:8px} }
 
 /* ---------- Print: one-page A4 flyer ---------- */
-@page{size:A4;margin:10mm}
+@page{size:A4;margin:0}
 @media print{
   *{-webkit-print-color-adjust:exact;print-color-adjust:exact}
   html,body{font-size:11px;background:#fff}
+  body{padding:10mm}
   .wrap{max-width:none;padding:0 4mm}
   header{position:static;border:0}
   .nav{height:auto;padding:2mm 4mm 4mm}
