@@ -296,6 +296,12 @@ h1,h2,h3,.pill,.btn{overflow-wrap:break-word}
   html,body{height:auto}
   body{zoom:0.81}
 }
+
+/* Find out more links */
+.more{display:flex;flex-wrap:wrap;justify-content:center;gap:14px;margin-top:36px}
+.more .btn{font-size:1.02rem;padding:.8em 1.6em;white-space:normal;text-align:center;justify-content:center;max-width:100%}
+@media (max-width:620px){.more .btn{width:100%}}
+@media print{.more{display:none !important}}
 </style>
 </head>
 <body>
@@ -398,6 +404,10 @@ h1,h2,h3,.pill,.btn{overflow-wrap:break-word}
         <div class="card"><div class="icon"><svg viewBox="0 0 24 24"><path d="M10 4V2h4v2h6a2 2 0 0 1 2 2v13a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2zm0 2H4v4h16V6z"/></svg></div><h3>Inglês para viver, trabalhar e estudar</h3><p>Inglês prático para o dia a dia, o trabalho e a continuação dos estudos na Austrália.</p></div>
         <div class="card"><div class="icon"><svg viewBox="0 0 24 24"><path d="M12 3 1 9l11 6 9-4.9V17h2V9zM5 13.2v4L12 21l7-3.8v-4L12 17z"/></svg></div><h3>Serviços e instalações do TAFE</h3><p>Acesse as bibliotecas, os recursos e o apoio ao aluno do TAFE NSW.</p></div>
       </div>
+      <p class="more">
+        <a class="btn btn-outline" href="https://www.tafensw.edu.au/programs/adult-migrant-english-program" target="_blank" rel="noopener">Saiba mais sobre nossas aulas de inglês <span aria-hidden="true">&#8599;</span></a>
+        <a class="btn btn-outline" href="https://immi.homeaffairs.gov.au/settling-in-australia/amep/about-the-program" target="_blank" rel="noopener">Saiba mais sobre o Programa de Inglês para Migrantes Adultos (AMEP) <span aria-hidden="true">&#8599;</span></a>
+      </p>
     </div>
   </section>
 

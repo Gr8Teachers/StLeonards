@@ -111,3 +111,5 @@ open('/home/claude/build/template.html','w').write(t)
 body=t[t.index('<body>'):t.index('<script>')]
 left=[x.strip() for x in re.findall(r'>([^<>{}]+)<',body) if re.search(r'[A-Za-z]{3,}',x)]
 print('untemplated text:',left)
+
+sys.path.insert(0,'/home/claude/shared'); from more_patch import apply_more; apply_more('/home/claude/build/template.html')
