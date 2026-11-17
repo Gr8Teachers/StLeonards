@@ -113,3 +113,5 @@ left=[x.strip() for x in re.findall(r'>([^<>{}]+)<',body) if re.search(r'[A-Za-z
 print('untemplated text:',left)
 
 sys.path.insert(0,'/home/claude/shared'); from more_patch import apply_more; apply_more('/home/claude/build/template.html')
+
+exec(open('/home/claude/build/stl_patch.py').read())

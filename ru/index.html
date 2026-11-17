@@ -302,6 +302,27 @@ h1,h2,h3,.pill,.btn{overflow-wrap:break-word}
 .more .btn{font-size:1.02rem;padding:.8em 1.6em;white-space:normal;text-align:center;justify-content:center;max-width:100%}
 @media (max-width:620px){.more .btn{width:100%}}
 @media print{.more{display:none !important}}
+
+/* Government-funded programs (St Leonards) */
+#programs{padding-top:0}
+.prog-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.prog-grid > *{min-width:0}
+.prog .pt strong,.prog .pt small{overflow-wrap:break-word}
+@media (max-width:420px){.prog{padding:18px 14px;gap:12px}}
+.prog{display:flex;align-items:flex-start;gap:16px;background:#fff;border:1px solid var(--line);border-left:5px solid var(--red);border-radius:var(--radius);padding:22px 20px;color:var(--ink)}
+.prog .pn{flex:none;width:40px;height:40px;border-radius:50%;background:var(--red);color:#fff;display:flex;align-items:center;justify-content:center;font-family:"Poppins","Open Sans","TAFE Script",sans-serif;font-weight:700}
+.prog .pt{min-width:0;display:flex;flex-direction:column;align-items:flex-start}
+.prog .pt strong{display:inline;font-family:"Poppins","Open Sans","TAFE Script",sans-serif;font-weight:600;font-size:1.08rem;line-height:1.35;color:var(--red);text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:1px}
+.prog .pl{color:var(--red);text-decoration:none;font-family:"Poppins","Open Sans","TAFE Script",sans-serif;font-weight:600}
+.prog .pl:hover strong{text-decoration-thickness:2px}
+.prog .pm{display:inline-block;margin-top:12px;padding-top:10px;border-top:1px dashed var(--line);color:var(--ink);font-weight:600;font-size:.95rem;text-decoration:underline;text-underline-offset:3px;text-decoration-color:var(--red)}
+.prog .pm:hover{color:var(--red)}
+.prog .pt small{display:block;color:var(--muted);font-size:.85rem;margin-top:4px}
+html[lang="en"] .prog .pt small{display:none}
+[dir="rtl"] .prog{border-left:1px solid var(--line);border-right:5px solid var(--red)}
+[dir="rtl"] .prog .pt small{text-align:right}
+@media (max-width:900px){.prog-grid{grid-template-columns:1fr}}
+@media print{#programs{display:none !important}}
 </style>
 </head>
 <body>
@@ -408,6 +429,18 @@ h1,h2,h3,.pill,.btn{overflow-wrap:break-word}
         <a class="btn btn-outline" href="https://www.tafensw.edu.au/programs/adult-migrant-english-program" target="_blank" rel="noopener">Подробнее о наших курсах английского <span aria-hidden="true">&#8599;</span></a>
         <a class="btn btn-outline" href="https://immi.homeaffairs.gov.au/settling-in-australia/amep/about-the-program" target="_blank" rel="noopener">Подробнее о программе английского языка для взрослых мигрантов (AMEP) <span aria-hidden="true">&#8599;</span></a>
       </p>
+    </div>
+  </section>
+
+  <!-- Government-funded programs -->
+  <section id="programs">
+    <div class="wrap">
+      <div class="sec-head"><h2>Государственные программы в <bdi dir="ltr">St&nbsp;Leonards</bdi></h2></div>
+      <div class="prog-grid">
+        <div class="prog"><span class="pn">1</span><div class="pt"><a class="pl" href="https://www.tafensw.edu.au/programs/adult-migrant-english-program" target="_blank" rel="noopener"><strong>Программа английского языка для взрослых мигрантов (AMEP)</strong> <span aria-hidden="true">&#8599;</span></a><small lang="en" dir="ltr">Adult Migrant English Program (AMEP)</small><a class="pm" href="https://immi.homeaffairs.gov.au/settling-in-australia/amep/about-the-program" target="_blank" rel="noopener">Подробнее о <bdi dir="ltr">AMEP</bdi> <span aria-hidden="true">&#8599;</span></a></div></div>
+        <div class="prog"><span class="pn">2</span><div class="pt"><a class="pl" href="https://www.tafensw.edu.au/programs/skills-for-education-and-employment" target="_blank" rel="noopener"><strong>Навыки для образования и трудоустройства (SEE)</strong> <span aria-hidden="true">&#8599;</span></a><small lang="en" dir="ltr">Skills for Education and Employment (SEE)</small><a class="pm" href="https://www.dewr.gov.au/skills-education-and-employment" target="_blank" rel="noopener">Подробнее о <bdi dir="ltr">SEE</bdi> <span aria-hidden="true">&#8599;</span></a></div></div>
+        <div class="prog"><span class="pn">3</span><div class="pt"><a class="pl" href="https://www.tafensw.edu.au/course-areas/foundation-skills-english-language-and-auslan" target="_blank" rel="noopener"><strong>Бесплатные курсы TAFE</strong> <span aria-hidden="true">&#8599;</span></a><small lang="en" dir="ltr">TAFE Fee-Free Courses</small><a class="pm" href="https://www.tafensw.edu.au/fee-free" target="_blank" rel="noopener">Подробнее о <bdi dir="ltr">TAFE&nbsp;Fee‑Free</bdi> <span aria-hidden="true">&#8599;</span></a></div></div>
+      </div>
     </div>
   </section>
 
