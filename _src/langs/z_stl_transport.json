@@ -1,142 +1,142 @@
 {
 "en": {
-"tr1": "5-minute walk from St Leonards Train Station",
-"tr2": "8-minute walk from Crows Nest Metro Station",
+"tr1": "5-minute walk from St Leonards Train",
+"tr2": "8-minute walk from Crows Nest Metro",
 "tr3": "All bus services on <bdi dir=\"ltr\">Pacific&nbsp;Hwy</bdi>"
 },
 "ar": {
-"tr1": "على بُعد 5 دقائق سيرًا على الأقدام من محطة <bdi dir=\"ltr\">St&nbsp;Leonards</bdi>",
-"tr2": "على بُعد 8 دقائق سيرًا على الأقدام من محطة <bdi dir=\"ltr\">Crows&nbsp;Nest&nbsp;Metro</bdi>",
+"tr1": "5 دقائق سيرًا من <bdi dir=\"ltr\">St&nbsp;Leonards&nbsp;Train</bdi>",
+"tr2": "8 دقائق سيرًا من <bdi dir=\"ltr\">Crows&nbsp;Nest&nbsp;Metro</bdi>",
 "tr3": "جميع خطوط الحافلات على <bdi dir=\"ltr\">Pacific&nbsp;Hwy</bdi>"
 },
 "prs": {
-"tr1": "5 دقیقه پیاده‌روی از ایستگاه <bdi dir=\"ltr\">St&nbsp;Leonards</bdi>",
-"tr2": "8 دقیقه پیاده‌روی از ایستگاه <bdi dir=\"ltr\">Crows&nbsp;Nest&nbsp;Metro</bdi>",
+"tr1": "5 دقیقه پیاده تا <bdi dir=\"ltr\">St&nbsp;Leonards&nbsp;Train</bdi>",
+"tr2": "8 دقیقه پیاده تا <bdi dir=\"ltr\">Crows&nbsp;Nest&nbsp;Metro</bdi>",
 "tr3": "همه خطوط بس در <bdi dir=\"ltr\">Pacific&nbsp;Hwy</bdi>"
 },
 "fa": {
-"tr1": "5 دقیقه پیاده‌روی از ایستگاه <bdi dir=\"ltr\">St&nbsp;Leonards</bdi>",
-"tr2": "8 دقیقه پیاده‌روی از ایستگاه <bdi dir=\"ltr\">Crows&nbsp;Nest&nbsp;Metro</bdi>",
+"tr1": "5 دقیقه پیاده تا <bdi dir=\"ltr\">St&nbsp;Leonards&nbsp;Train</bdi>",
+"tr2": "8 دقیقه پیاده تا <bdi dir=\"ltr\">Crows&nbsp;Nest&nbsp;Metro</bdi>",
 "tr3": "همه خطوط اتوبوس در <bdi dir=\"ltr\">Pacific&nbsp;Hwy</bdi>"
 },
 "ps": {
-"tr1": "د <bdi dir=\"ltr\">St&nbsp;Leonards</bdi> سټېشن څخه 5 دقیقې پلې لار",
-"tr2": "د <bdi dir=\"ltr\">Crows&nbsp;Nest&nbsp;Metro</bdi> سټېشن څخه 8 دقیقې پلې لار",
+"tr1": "له <bdi dir=\"ltr\">St&nbsp;Leonards&nbsp;Train</bdi> څخه 5 دقیقې پلې",
+"tr2": "له <bdi dir=\"ltr\">Crows&nbsp;Nest&nbsp;Metro</bdi> څخه 8 دقیقې پلې",
 "tr3": "د <bdi dir=\"ltr\">Pacific&nbsp;Hwy</bdi> ټولې بس کرښې"
 },
 "ckb": {
-"tr1": "5 خولەک بە پێ لە وێستگەی <bdi dir=\"ltr\">St&nbsp;Leonards</bdi>",
-"tr2": "8 خولەک بە پێ لە وێستگەی <bdi dir=\"ltr\">Crows&nbsp;Nest&nbsp;Metro</bdi>",
-"tr3": "هەموو هێڵەکانی پاس لە <bdi dir=\"ltr\">Pacific&nbsp;Hwy</bdi>"
+"tr1": "5 خولەک بە پێ لە <bdi dir=\"ltr\">St&nbsp;Leonards&nbsp;Train</bdi>",
+"tr2": "8 خولەک بە پێ لە <bdi dir=\"ltr\">Crows&nbsp;Nest&nbsp;Metro</bdi>",
+"tr3": "هەموو پاسەکانی <bdi dir=\"ltr\">Pacific&nbsp;Hwy</bdi>"
 },
 "ur": {
-"tr1": "<bdi dir=\"ltr\">St&nbsp;Leonards</bdi> اسٹیشن سے 5 منٹ کی پیدل مسافت",
-"tr2": "<bdi dir=\"ltr\">Crows&nbsp;Nest&nbsp;Metro</bdi> اسٹیشن سے 8 منٹ کی پیدل مسافت",
-"tr3": "<bdi dir=\"ltr\">Pacific&nbsp;Hwy</bdi> پر تمام بس سروسز"
+"tr1": "<bdi dir=\"ltr\">St&nbsp;Leonards&nbsp;Train</bdi> سے 5 منٹ پیدل",
+"tr2": "<bdi dir=\"ltr\">Crows&nbsp;Nest&nbsp;Metro</bdi> سے 8 منٹ پیدل",
+"tr3": "<bdi dir=\"ltr\">Pacific&nbsp;Hwy</bdi> پر تمام بسیں"
 },
 "kmr": {
-"tr1": "5 deqîqe meş ji Stasyona <bdi dir=\"ltr\">St&nbsp;Leonards</bdi>",
-"tr2": "8 deqîqe meş ji Stasyona <bdi dir=\"ltr\">Crows&nbsp;Nest&nbsp;Metro</bdi>",
-"tr3": "Hemû xetên otobûsê li ser <bdi dir=\"ltr\">Pacific&nbsp;Hwy</bdi>"
+"tr1": "5 deqîqe meş ji <bdi dir=\"ltr\">St&nbsp;Leonards&nbsp;Train</bdi>",
+"tr2": "8 deqîqe meş ji <bdi dir=\"ltr\">Crows&nbsp;Nest&nbsp;Metro</bdi>",
+"tr3": "Hemû otobûsên <bdi dir=\"ltr\">Pacific&nbsp;Hwy</bdi>"
 },
 "tr": {
-"tr1": "<bdi dir=\"ltr\">St&nbsp;Leonards</bdi> İstasyonu'na 5 dakika yürüme mesafesinde",
-"tr2": "<bdi dir=\"ltr\">Crows&nbsp;Nest&nbsp;Metro</bdi> İstasyonu'na 8 dakika yürüme mesafesinde",
-"tr3": "<bdi dir=\"ltr\">Pacific&nbsp;Hwy</bdi> üzerindeki tüm otobüs hatları"
+"tr1": "<bdi dir=\"ltr\">St&nbsp;Leonards&nbsp;Train</bdi>'e 5 dakika yürüme",
+"tr2": "<bdi dir=\"ltr\">Crows&nbsp;Nest&nbsp;Metro</bdi>'e 8 dakika yürüme",
+"tr3": "<bdi dir=\"ltr\">Pacific&nbsp;Hwy</bdi> üzerindeki tüm otobüsler"
 },
 "zh": {
-"tr1": "距 <bdi dir=\"ltr\">St&nbsp;Leonards</bdi> 站步行 5 分钟",
-"tr2": "距 <bdi dir=\"ltr\">Crows&nbsp;Nest&nbsp;Metro</bdi> 站步行 8 分钟",
+"tr1": "距 <bdi dir=\"ltr\">St&nbsp;Leonards&nbsp;Train</bdi> 步行 5 分钟",
+"tr2": "距 <bdi dir=\"ltr\">Crows&nbsp;Nest&nbsp;Metro</bdi> 步行 8 分钟",
 "tr3": "<bdi dir=\"ltr\">Pacific&nbsp;Hwy</bdi> 上所有公交线路"
 },
 "ja": {
-"tr1": "<bdi dir=\"ltr\">St&nbsp;Leonards</bdi>駅から徒歩5分",
-"tr2": "<bdi dir=\"ltr\">Crows&nbsp;Nest&nbsp;Metro</bdi>駅から徒歩8分",
-"tr3": "<bdi dir=\"ltr\">Pacific&nbsp;Hwy</bdi>を通るすべてのバス"
+"tr1": "<bdi dir=\"ltr\">St&nbsp;Leonards&nbsp;Train</bdi>から徒歩5分",
+"tr2": "<bdi dir=\"ltr\">Crows&nbsp;Nest&nbsp;Metro</bdi>から徒歩8分",
+"tr3": "<bdi dir=\"ltr\">Pacific&nbsp;Hwy</bdi>のすべてのバス"
 },
 "ko": {
-"tr1": "<bdi dir=\"ltr\">St&nbsp;Leonards</bdi> 역에서 도보 5분",
-"tr2": "<bdi dir=\"ltr\">Crows&nbsp;Nest&nbsp;Metro</bdi> 역에서 도보 8분",
-"tr3": "<bdi dir=\"ltr\">Pacific&nbsp;Hwy</bdi>의 모든 버스 노선"
+"tr1": "<bdi dir=\"ltr\">St&nbsp;Leonards&nbsp;Train</bdi>에서 도보 5분",
+"tr2": "<bdi dir=\"ltr\">Crows&nbsp;Nest&nbsp;Metro</bdi>에서 도보 8분",
+"tr3": "<bdi dir=\"ltr\">Pacific&nbsp;Hwy</bdi>의 모든 버스"
 },
 "mn": {
-"tr1": "<bdi dir=\"ltr\">St&nbsp;Leonards</bdi> буудлаас явганаар 5 минут",
-"tr2": "<bdi dir=\"ltr\">Crows&nbsp;Nest&nbsp;Metro</bdi> буудлаас явганаар 8 минут",
-"tr3": "<bdi dir=\"ltr\">Pacific&nbsp;Hwy</bdi> дээрх бүх автобусны чиглэл"
+"tr1": "<bdi dir=\"ltr\">St&nbsp;Leonards&nbsp;Train</bdi>-аас явганаар 5 минут",
+"tr2": "<bdi dir=\"ltr\">Crows&nbsp;Nest&nbsp;Metro</bdi>-аас явганаар 8 минут",
+"tr3": "<bdi dir=\"ltr\">Pacific&nbsp;Hwy</bdi>-ийн бүх автобус"
 },
 "my": {
-"tr1": "<bdi dir=\"ltr\">St&nbsp;Leonards</bdi> ဘူတာမှ လမ်းလျှောက် 5 မိနစ်",
-"tr2": "<bdi dir=\"ltr\">Crows&nbsp;Nest&nbsp;Metro</bdi> ဘူတာမှ လမ်းလျှောက် 8 မိနစ်",
-"tr3": "<bdi dir=\"ltr\">Pacific&nbsp;Hwy</bdi> ပေါ်ရှိ ဘတ်စ်ကားလိုင်းအားလုံး"
+"tr1": "<bdi dir=\"ltr\">St&nbsp;Leonards&nbsp;Train</bdi> မှ လမ်းလျှောက် 5 မိနစ်",
+"tr2": "<bdi dir=\"ltr\">Crows&nbsp;Nest&nbsp;Metro</bdi> မှ လမ်းလျှောက် 8 မိနစ်",
+"tr3": "<bdi dir=\"ltr\">Pacific&nbsp;Hwy</bdi> ဘတ်စ်ကားအားလုံး"
 },
 "km": {
-"tr1": "ដើរ 5 នាទីពីស្ថានីយ <bdi dir=\"ltr\">St&nbsp;Leonards</bdi>",
-"tr2": "ដើរ 8 នាទីពីស្ថានីយ <bdi dir=\"ltr\">Crows&nbsp;Nest&nbsp;Metro</bdi>",
-"tr3": "ខ្សែឡានក្រុងទាំងអស់នៅលើ <bdi dir=\"ltr\">Pacific&nbsp;Hwy</bdi>"
+"tr1": "ដើរ 5 នាទីពី <bdi dir=\"ltr\">St&nbsp;Leonards&nbsp;Train</bdi>",
+"tr2": "ដើរ 8 នាទីពី <bdi dir=\"ltr\">Crows&nbsp;Nest&nbsp;Metro</bdi>",
+"tr3": "ឡានក្រុងទាំងអស់នៅ <bdi dir=\"ltr\">Pacific&nbsp;Hwy</bdi>"
 },
 "th": {
-"tr1": "เดิน 5 นาทีจากสถานี <bdi dir=\"ltr\">St&nbsp;Leonards</bdi>",
-"tr2": "เดิน 8 นาทีจากสถานี <bdi dir=\"ltr\">Crows&nbsp;Nest&nbsp;Metro</bdi>",
+"tr1": "เดิน 5 นาทีจาก <bdi dir=\"ltr\">St&nbsp;Leonards&nbsp;Train</bdi>",
+"tr2": "เดิน 8 นาทีจาก <bdi dir=\"ltr\">Crows&nbsp;Nest&nbsp;Metro</bdi>",
 "tr3": "รถเมล์ทุกสายบน <bdi dir=\"ltr\">Pacific&nbsp;Hwy</bdi>"
 },
 "vi": {
-"tr1": "Cách ga <bdi dir=\"ltr\">St&nbsp;Leonards</bdi> 5 phút đi bộ",
-"tr2": "Cách ga <bdi dir=\"ltr\">Crows&nbsp;Nest&nbsp;Metro</bdi> 8 phút đi bộ",
-"tr3": "Tất cả các tuyến xe buýt trên <bdi dir=\"ltr\">Pacific&nbsp;Hwy</bdi>"
+"tr1": "5 phút đi bộ từ <bdi dir=\"ltr\">St&nbsp;Leonards&nbsp;Train</bdi>",
+"tr2": "8 phút đi bộ từ <bdi dir=\"ltr\">Crows&nbsp;Nest&nbsp;Metro</bdi>",
+"tr3": "Mọi tuyến xe buýt trên <bdi dir=\"ltr\">Pacific&nbsp;Hwy</bdi>"
 },
 "id": {
-"tr1": "5 menit berjalan kaki dari Stasiun <bdi dir=\"ltr\">St&nbsp;Leonards</bdi>",
-"tr2": "8 menit berjalan kaki dari Stasiun <bdi dir=\"ltr\">Crows&nbsp;Nest&nbsp;Metro</bdi>",
-"tr3": "Semua layanan bus di <bdi dir=\"ltr\">Pacific&nbsp;Hwy</bdi>"
+"tr1": "5 menit jalan kaki dari <bdi dir=\"ltr\">St&nbsp;Leonards&nbsp;Train</bdi>",
+"tr2": "8 menit jalan kaki dari <bdi dir=\"ltr\">Crows&nbsp;Nest&nbsp;Metro</bdi>",
+"tr3": "Semua bus di <bdi dir=\"ltr\">Pacific&nbsp;Hwy</bdi>"
 },
 "hi": {
-"tr1": "<bdi dir=\"ltr\">St&nbsp;Leonards</bdi> स्टेशन से 5 मिनट की पैदल दूरी",
-"tr2": "<bdi dir=\"ltr\">Crows&nbsp;Nest&nbsp;Metro</bdi> स्टेशन से 8 मिनट की पैदल दूरी",
-"tr3": "<bdi dir=\"ltr\">Pacific&nbsp;Hwy</bdi> पर सभी बस सेवाएँ"
+"tr1": "<bdi dir=\"ltr\">St&nbsp;Leonards&nbsp;Train</bdi> से 5 मिनट पैदल",
+"tr2": "<bdi dir=\"ltr\">Crows&nbsp;Nest&nbsp;Metro</bdi> से 8 मिनट पैदल",
+"tr3": "<bdi dir=\"ltr\">Pacific&nbsp;Hwy</bdi> पर सभी बसें"
 },
 "ne": {
-"tr1": "<bdi dir=\"ltr\">St&nbsp;Leonards</bdi> स्टेसनबाट 5 मिनेट पैदल",
-"tr2": "<bdi dir=\"ltr\">Crows&nbsp;Nest&nbsp;Metro</bdi> स्टेसनबाट 8 मिनेट पैदल",
-"tr3": "<bdi dir=\"ltr\">Pacific&nbsp;Hwy</bdi> मा सबै बस सेवा"
+"tr1": "<bdi dir=\"ltr\">St&nbsp;Leonards&nbsp;Train</bdi> बाट 5 मिनेट पैदल",
+"tr2": "<bdi dir=\"ltr\">Crows&nbsp;Nest&nbsp;Metro</bdi> बाट 8 मिनेट पैदल",
+"tr3": "<bdi dir=\"ltr\">Pacific&nbsp;Hwy</bdi> मा सबै बस"
 },
 "pa": {
-"tr1": "<bdi dir=\"ltr\">St&nbsp;Leonards</bdi> ਸਟੇਸ਼ਨ ਤੋਂ 5 ਮਿੰਟ ਦੀ ਪੈਦਲ ਦੂਰੀ",
-"tr2": "<bdi dir=\"ltr\">Crows&nbsp;Nest&nbsp;Metro</bdi> ਸਟੇਸ਼ਨ ਤੋਂ 8 ਮਿੰਟ ਦੀ ਪੈਦਲ ਦੂਰੀ",
-"tr3": "<bdi dir=\"ltr\">Pacific&nbsp;Hwy</bdi> 'ਤੇ ਸਾਰੀਆਂ ਬੱਸ ਸੇਵਾਵਾਂ"
+"tr1": "<bdi dir=\"ltr\">St&nbsp;Leonards&nbsp;Train</bdi> ਤੋਂ 5 ਮਿੰਟ ਪੈਦਲ",
+"tr2": "<bdi dir=\"ltr\">Crows&nbsp;Nest&nbsp;Metro</bdi> ਤੋਂ 8 ਮਿੰਟ ਪੈਦਲ",
+"tr3": "<bdi dir=\"ltr\">Pacific&nbsp;Hwy</bdi> 'ਤੇ ਸਾਰੀਆਂ ਬੱਸਾਂ"
 },
 "ta": {
-"tr1": "<bdi dir=\"ltr\">St&nbsp;Leonards</bdi> நிலையத்திலிருந்து 5 நிமிட நடை",
-"tr2": "<bdi dir=\"ltr\">Crows&nbsp;Nest&nbsp;Metro</bdi> நிலையத்திலிருந்து 8 நிமிட நடை",
-"tr3": "<bdi dir=\"ltr\">Pacific&nbsp;Hwy</bdi>-இல் அனைத்து பேருந்து சேவைகளும்"
+"tr1": "<bdi dir=\"ltr\">St&nbsp;Leonards&nbsp;Train</bdi>-இலிருந்து 5 நிமிட நடை",
+"tr2": "<bdi dir=\"ltr\">Crows&nbsp;Nest&nbsp;Metro</bdi>-இலிருந்து 8 நிமிட நடை",
+"tr3": "<bdi dir=\"ltr\">Pacific&nbsp;Hwy</bdi> பேருந்துகள் அனைத்தும்"
 },
 "ru": {
-"tr1": "5 минут пешком от станции <bdi dir=\"ltr\">St&nbsp;Leonards</bdi>",
-"tr2": "8 минут пешком от станции <bdi dir=\"ltr\">Crows&nbsp;Nest&nbsp;Metro</bdi>",
+"tr1": "5 мин пешком от <bdi dir=\"ltr\">St&nbsp;Leonards&nbsp;Train</bdi>",
+"tr2": "8 мин пешком от <bdi dir=\"ltr\">Crows&nbsp;Nest&nbsp;Metro</bdi>",
 "tr3": "Все автобусы по <bdi dir=\"ltr\">Pacific&nbsp;Hwy</bdi>"
 },
 "uk": {
-"tr1": "5 хвилин пішки від станції <bdi dir=\"ltr\">St&nbsp;Leonards</bdi>",
-"tr2": "8 хвилин пішки від станції <bdi dir=\"ltr\">Crows&nbsp;Nest&nbsp;Metro</bdi>",
+"tr1": "5 хв пішки від <bdi dir=\"ltr\">St&nbsp;Leonards&nbsp;Train</bdi>",
+"tr2": "8 хв пішки від <bdi dir=\"ltr\">Crows&nbsp;Nest&nbsp;Metro</bdi>",
 "tr3": "Усі автобуси по <bdi dir=\"ltr\">Pacific&nbsp;Hwy</bdi>"
 },
 "es": {
-"tr1": "A 5 minutos a pie de la estación <bdi dir=\"ltr\">St&nbsp;Leonards</bdi>",
-"tr2": "A 8 minutos a pie de la estación <bdi dir=\"ltr\">Crows&nbsp;Nest&nbsp;Metro</bdi>",
+"tr1": "A 5 minutos a pie de <bdi dir=\"ltr\">St&nbsp;Leonards&nbsp;Train</bdi>",
+"tr2": "A 8 minutos a pie de <bdi dir=\"ltr\">Crows&nbsp;Nest&nbsp;Metro</bdi>",
 "tr3": "Todos los autobuses de <bdi dir=\"ltr\">Pacific&nbsp;Hwy</bdi>"
 },
 "pt": {
-"tr1": "A 5 minutos a pé da estação <bdi dir=\"ltr\">St&nbsp;Leonards</bdi>",
-"tr2": "A 8 minutos a pé da estação <bdi dir=\"ltr\">Crows&nbsp;Nest&nbsp;Metro</bdi>",
-"tr3": "Todas as linhas de ônibus da <bdi dir=\"ltr\">Pacific&nbsp;Hwy</bdi>"
+"tr1": "A 5 minutos a pé de <bdi dir=\"ltr\">St&nbsp;Leonards&nbsp;Train</bdi>",
+"tr2": "A 8 minutos a pé de <bdi dir=\"ltr\">Crows&nbsp;Nest&nbsp;Metro</bdi>",
+"tr3": "Todos os ônibus da <bdi dir=\"ltr\">Pacific&nbsp;Hwy</bdi>"
 },
 "sw": {
-"tr1": "Dakika 5 kwa miguu kutoka Kituo cha <bdi dir=\"ltr\">St&nbsp;Leonards</bdi>",
-"tr2": "Dakika 8 kwa miguu kutoka Kituo cha <bdi dir=\"ltr\">Crows&nbsp;Nest&nbsp;Metro</bdi>",
-"tr3": "Huduma zote za basi kwenye <bdi dir=\"ltr\">Pacific&nbsp;Hwy</bdi>"
+"tr1": "Dakika 5 kwa miguu kutoka <bdi dir=\"ltr\">St&nbsp;Leonards&nbsp;Train</bdi>",
+"tr2": "Dakika 8 kwa miguu kutoka <bdi dir=\"ltr\">Crows&nbsp;Nest&nbsp;Metro</bdi>",
+"tr3": "Mabasi yote ya <bdi dir=\"ltr\">Pacific&nbsp;Hwy</bdi>"
 },
 "ti": {
-"tr1": "ካብ መዕረፊ <bdi dir=\"ltr\">St&nbsp;Leonards</bdi> 5 ደቒቕ ብእግሪ",
-"tr2": "ካብ መዕረፊ <bdi dir=\"ltr\">Crows&nbsp;Nest&nbsp;Metro</bdi> 8 ደቒቕ ብእግሪ",
+"tr1": "ካብ <bdi dir=\"ltr\">St&nbsp;Leonards&nbsp;Train</bdi> 5 ደቒቕ ብእግሪ",
+"tr2": "ካብ <bdi dir=\"ltr\">Crows&nbsp;Nest&nbsp;Metro</bdi> 8 ደቒቕ ብእግሪ",
 "tr3": "ኩሎም ኣውቶቡሳት ኣብ <bdi dir=\"ltr\">Pacific&nbsp;Hwy</bdi>"
 }
 }

@@ -92,11 +92,16 @@ CSS2 = '''
 .date-card p.walk span{min-width:0;overflow-wrap:break-word}
 .dc-loc > p:first-child{margin-bottom:4px}
 @media print{
-  .dc-main{display:grid;grid-template-columns:auto 1fr;column-gap:26px;align-items:center}
+  .dc-main{display:grid;grid-template-columns:auto 1fr;column-gap:20px;align-items:center}
+  .date-card h2{font-size:1.75rem !important}
+  .dc-eyebrow{font-size:.85rem !important}
+  .pill{font-size:1.05rem !important;padding:.35em .8em !important}
+  .pill-y{font-size:.95rem !important}
+  .dc-row{gap:8px !important;margin:10px 0 0 !important}
   .dc-main > .dc-eyebrow,.dc-main > h2,.dc-main > .dc-row{grid-column:1}
-  .dc-main > .dc-loc{grid-column:2;grid-row:1 / span 3;border-inline-start:1.5px solid rgba(255,255,255,.35);padding-inline-start:24px;align-self:stretch;display:flex;flex-direction:column;justify-content:center}
+  .dc-main > .dc-loc{grid-column:2;grid-row:1 / span 3;border-inline-start:1.5px solid rgba(255,255,255,.35);padding-inline-start:20px;align-self:stretch;display:flex;flex-direction:column;justify-content:center}
   .dc-loc p{font-size:1.2rem !important;line-height:1.35;color:#fff !important}
-  .dc-loc p.walk{font-size:1.12rem !important;margin-top:6px}
+  .dc-loc p.walk{font-size:1.1rem !important;margin-top:6px;white-space:nowrap}
 }
 '''
 t = t.replace('</style>', CSS2 + '</style>', 1)
