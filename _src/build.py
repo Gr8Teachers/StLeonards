@@ -45,6 +45,7 @@ for f in glob.glob(os.path.join(ROOT, 'langs', '*.json')):
     for lk, lv in d.items():
         trans.setdefault(lk, {}).update(lv)
 
+en.update(trans.pop('en', {}))
 zoom = json.load(open(os.path.join(ROOT, 'zoom.json'))) if os.path.exists(os.path.join(ROOT, 'zoom.json')) else {}
 only = os.environ.get('ONLY')
 
