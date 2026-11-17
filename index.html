@@ -142,7 +142,7 @@ footer em{color:#d6dce0}
 @media print{
   *{-webkit-print-color-adjust:exact;print-color-adjust:exact}
   html,body{font-size:11px;background:#fff}
-  body{padding:10mm}
+  body{padding:7mm 10mm 5mm}
   .wrap{max-width:none;padding:0 4mm}
   header{position:static;border:0}
   .nav{height:auto;padding:2mm 4mm 4mm}
@@ -159,15 +159,21 @@ footer em{color:#d6dce0}
   .pill{font-size:1.5rem}
   .cal{width:150px}.cal .d{font-size:2.8rem}
   .date-card p{font-size:1.15rem}
-  section{padding:18px 0}
+  section{padding:14px 0}
   .sec-head{margin-bottom:14px}
   .sec-head h2{font-size:1.8rem}
   .sec-head h2::after{margin-top:8px}
   .sec-head p{margin-top:6px}
   .grid,.steps{grid-template-columns:repeat(3,1fr) !important;gap:10px}
-  .card,.step{padding:14px;break-inside:avoid}
+  .card,.step{padding:12px 16px;break-inside:avoid}
+  .card h3{font-size:1.6rem;line-height:1.25}
+  .card p{font-size:1.32rem;line-height:1.38;margin-top:4px;color:#3d464d}
+  .sec-head h2{font-size:2.3rem}
+  .qr-box p{font-size:1.2rem}
+  .contact-box > p{font-size:1.3rem}
+  footer p{font-size:1.15rem}
   .card:hover{transform:none;box-shadow:none}
-  .icon{width:36px;height:36px;margin-bottom:8px}.icon svg{width:20px;height:20px}
+  .icon{width:32px;height:32px;margin-bottom:6px}.icon svg{width:20px;height:20px}
   .step::before{width:28px;height:28px;margin-bottom:8px}
   .alt{background:#fff}
   .alt .step{border:1px solid var(--line)}
@@ -179,14 +185,16 @@ footer em{color:#d6dce0}
   .cl a{font-size:1.5rem}
   .cl small{font-size:.9rem}
   .qr-box{padding:14px}
-  .qr-box img{width:150px}
+  .qr-box img{width:140px}
   .qr-box h3{margin-top:6px}
-  footer{background:#fff;color:#444;padding:10px 0 0;border-top:1px solid var(--line)}
+  footer{background:#fff;color:#444;padding:6px 0 0;border-top:1px solid var(--line)}
   footer .fl{display:none}
+  footer .wrap{display:block}
+  footer p{max-width:none}
   footer em{color:#222}
   .alt{display:none}
   #offer .sec-head p{display:none}
-  .print-only{display:block;font-weight:600;color:var(--red)}
+  .print-only{display:block;font-weight:600;color:var(--red);margin-top:4px}
   .infoday,.contact{break-inside:avoid}
   html,body{height:auto}
   body{zoom:.86}
