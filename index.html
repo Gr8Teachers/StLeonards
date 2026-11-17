@@ -54,7 +54,7 @@ header{position:sticky;top:0;z-index:20;background:#fff;border-bottom:1px solid 
 .cal .d{font-size:3.4rem;padding:6px 0 2px;font-weight:700}
 .cal .y{font-size:1.1rem;font-weight:600;color:var(--ink);text-transform:uppercase;letter-spacing:.1em}
 .dc-eyebrow{font-family:"Poppins",sans-serif;text-transform:uppercase;letter-spacing:.14em;font-size:1.05rem;font-weight:600;color:#ffd7e1}
-.date-card h2{font-size:clamp(1.9rem,4.2vw,3rem);font-weight:700;line-height:1.15;margin-top:2px}
+.date-card h2{white-space:nowrap;font-size:clamp(1.3rem,4.2vw,2.7rem);font-weight:700;line-height:1.15;margin-top:2px}
 .dc-row{display:flex;flex-wrap:wrap;gap:10px;margin:14px 0 10px}
 .pill{display:inline-flex;align-items:center;gap:.45em;background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.35);border-radius:999px;padding:.45em 1.1em;font-family:"Poppins",sans-serif;font-weight:600;font-size:clamp(1.15rem,2.2vw,1.5rem);white-space:nowrap}
 .pill svg{width:1.1em;height:1.1em;fill:currentColor}
@@ -114,10 +114,15 @@ footer em{color:#d6dce0}
   .contact{grid-template-columns:1fr}
   .nav ul li.link{display:none}
 }
+@media (max-width:1100px){
+  .date-card{grid-template-columns:auto 1fr}
+  .date-card .btn{grid-column:1/-1;justify-content:center}
+}
 @media (max-width:620px){
   .grid,.steps{grid-template-columns:1fr}
   .date-card{grid-template-columns:1fr;padding:26px 22px;gap:18px;text-align:center}
   .cal{margin:0 auto;width:180px}
+  .date-card h2{font-size:6.2vw}
   .dc-row{justify-content:center}
   .date-card .btn{grid-column:1/-1;justify-content:center}
   .hero .wrap{padding-top:64px;padding-bottom:88px}
