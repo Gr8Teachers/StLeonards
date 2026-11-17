@@ -60,3 +60,17 @@ t2 = _re.sub(r'      <p class="more">\n.*?      </p>\n', '', t, count=1, flags=_
 assert t2 != t, 'more buttons not found'
 open(p, 'w', encoding='utf-8').write(t2)
 print('find-out-more buttons removed')
+
+# St Leonards print: bigger QR code, less white space around it
+t = open(p, encoding='utf-8').read()
+QR_CSS = '''
+@media print{
+  .qr-box{padding:8px 10px !important;justify-content:center}
+  .qr-box img{width:100% !important;max-width:{{QRW}}px}
+  .qr-box h3{margin-top:4px !important;font-size:1.3rem}
+  .qr-box p{font-size:1.05rem !important;line-height:1.3;margin:0}
+}
+'''
+t = t.replace('</style>', QR_CSS.replace('{{QRW}}', '230') + '</style>', 1)
+open(p, 'w', encoding='utf-8').write(t)
+print('print QR enlarged')
