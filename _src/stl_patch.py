@@ -149,3 +149,20 @@ t = t.replace('</style>', '''
 @media (max-width:620px){.msform{padding:28px 18px}.msform-btn{white-space:nowrap;font-size:clamp(.85rem,4.2vw,1.1rem);padding:.85em 1.2em;max-width:100%}html[lang="ta"] .msform-btn,html[lang="es"] .msform-btn{white-space:normal}}
 </style>''', 1)
 open(p, 'w', encoding='utf-8').write(t)
+
+# St Leonards: smaller contact details; address in two lines
+t = open(p, encoding='utf-8').read()
+t = t.replace('</style>', '''
+.contact-box .cl a{font-size:clamp(.95rem,1.45vw,1.2rem) !important}
+.contact-box .cl li:last-child a{white-space:nowrap}
+@media (max-width:620px){
+  .contact-box{padding:24px 18px !important}
+  .contact-box .cl li{gap:12px !important}
+  .contact-box .cl .ci{width:38px !important;height:38px !important}
+  .contact-box .cl .ci svg{width:19px !important;height:19px !important}
+  .contact-box .cl a{font-size:clamp(.78rem,3.45vw,1rem) !important}
+}
+@media (max-width:379px){.contact-box .cl a{font-size:3.25vw !important}.contact-box{padding:22px 14px !important}}
+@media (max-width:354px){.contact-box .cl li:last-child a{white-space:normal}}
+</style>''', 1)
+open(p, 'w', encoding='utf-8').write(t)
