@@ -92,6 +92,7 @@ html[lang="my"] body,html[lang="km"] body{line-height:1.85}
 '''
 t=t.replace('/* ---------- Print: one-page A4 flyer ---------- */',extra+'\n/* ---------- Print: one-page A4 flyer ---------- */',1)
 t=t.replace('  body{zoom:.86}','  body{zoom:{{ZOOM}}}')
+assert '@page{size:A4;margin:0}' in t  # keep A4 page size
 import sys; sys.path.insert(0,'/home/claude/build'); from form_patch import FORM_HTML, FORM_CSS, FORM_JS, MSFORM_HTML, MSFORM_CSS
 assert '  <!-- Contact -->' in t
 t=t.replace('  <!-- Contact -->', FORM_HTML+'  <!-- Contact -->')

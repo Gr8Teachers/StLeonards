@@ -81,7 +81,8 @@ for folder, code, d, native, eng in LANGS:
     page = page.replace('{{LANG}}', code).replace('{{DIR}}', d)
     page = page.replace('{{A}}', '' if not folder else '../')
     page = page.replace('{{PATH}}', '' if not folder else '/' + folder)
-    page = page.replace('{{ZOOM}}', str(zoom.get(folder or 'en', 0.86)))
+    zv = zoom.get(folder or 'en', 0.86)
+    page = page.replace('{{ZOOM}}', str(zv))
     page = page.replace('{{LANG_ITEMS}}', lang_items(folder))
     page = page.replace('{{JS_LANG}}', json.dumps(eng if folder else 'English')).replace('{{JS_SENDING}}', json.dumps(html.unescape(s['f_sending']))).replace('{{JS_ERROR}}', json.dumps(html.unescape(s['f_error'])))
     page = page.replace('{{CAL_CLS}}', ' sm' if s.get('cal_sm') else '')
@@ -99,8 +100,7 @@ for folder, code, d, native, eng in LANGS:
     built.append(folder or 'en')
 
 import shutil
-if os.path.isdir(os.path.join(ROOT, 'assets')):
-    if os.path.exists(os.path.join(OUT, 'assets')):
-        shutil.rmtree(os.path.join(OUT, 'assets'))
-    shutil.copytree(os.path.join(ROOT, 'assets'), os.path.join(OUT, 'assets'))
+if os.path.exists(os.path.join(OUT, 'assets')):
+    shutil.rmtree(os.path.join(OUT, 'assets'))
+shutil.copytree(os.path.join(ROOT, 'assets'), os.path.join(OUT, 'assets'))
 print('built', len(built), ' '.join(built))
