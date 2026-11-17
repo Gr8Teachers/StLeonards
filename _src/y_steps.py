@@ -70,3 +70,40 @@ for k, v in S2.items():
     out[k]['s2_d'] = v
 json.dump(out, open('y_steps.json', 'w', encoding='utf-8'), ensure_ascii=False, indent=0)
 print('step 2 added')
+
+# Step 3 wording (updated: "the CSO", introduced in step 2)
+S3 = {
+"en": "Once your eligibility is confirmed, the CSO will complete your AMEP registration and book you in for an Initial Assessment to test your English level.",
+"ar": "بعد تأكيد أهليتك، سيُكمل موظف خدمة العملاء (CSO) تسجيلك في برنامج AMEP ويحجز لك موعدًا للتقييم الأولي (Initial Assessment) لاختبار مستواك في اللغة الإنجليزية.",
+"prs": "پس از تأیید واجد شرایط بودن شما، کارمند خدمات مشتریان (CSO) ثبت‌نام AMEP شما را تکمیل می‌کند و برای سنجش سطح انگلیسی شما وقت ارزیابی ابتدایی (Initial Assessment) می‌گیرد.",
+"fa": "پس از تأیید شرایط پذیرش، کارمند خدمات مشتریان (CSO) ثبت‌نام AMEP شما را تکمیل می‌کند و برای سنجش سطح زبان انگلیسی‌تان وقت ارزیابی اولیه (Initial Assessment) می‌گذارد.",
+"ps": "کله چې ستاسو وړتیا تایید شي، د پېرودونکو د خدمتونو کارکوونکی (CSO) به ستاسو د AMEP نوم لیکنه بشپړه کړي او ستاسو د انګلیسي کچې د ازموینې لپاره به لومړنۍ ارزونه (Initial Assessment) درته وټاکي.",
+"ckb": "دوای پشتڕاستکردنەوەی شیاویت، کارمەندی خزمەتگوزاریی کڕیاران (CSO) تۆمارکردنی AMEP ـەکەت تەواو دەکات و کاتێکت بۆ هەڵسەنگاندنی سەرەتایی (Initial Assessment) دیاری دەکات بۆ تاقیکردنەوەی ئاستی ئینگلیزییەکەت.",
+"ur": "آپ کی اہلیت کی تصدیق کے بعد، کسٹمر سروس آفیسر (CSO) آپ کی AMEP رجسٹریشن مکمل کرے گا اور آپ کی انگریزی کی سطح جانچنے کے لیے ابتدائی جانچ (Initial Assessment) کا وقت مقرر کرے گا۔",
+"kmr": "Piştî ku mafdariya we hate piştrastkirin, Karmendê Xizmeta Xerîdaran (CSO) dê tomarkirina we ya AMEP temam bike û ji bo ceribandina asta Îngilîziya we dem ji bo Nirxandina Destpêkê (Initial Assessment) bide we.",
+"tr": "Uygunluğunuz onaylandıktan sonra Müşteri Hizmetleri Görevlisi (CSO) AMEP kaydınızı tamamlar ve İngilizce seviyenizi ölçmek için size bir İlk Değerlendirme (Initial Assessment) randevusu verir.",
+"zh": "确认您的资格后，客户服务专员 (CSO) 会为您完成 AMEP 注册，并为您预约初步评估 (Initial Assessment)，测试您的英语水平。",
+"ja": "受講資格が確認されたら、カスタマーサービス担当者（CSO）がAMEPの登録を行い、英語レベルを測る初回評価（Initial Assessment）を予約します。",
+"ko": "자격이 확인되면 고객 서비스 담당자(CSO)가 AMEP 등록을 완료하고, 영어 수준을 확인하기 위한 초기 평가(Initial Assessment)를 예약해 드립니다.",
+"mn": "Таны тэнцэх эсэх батлагдсаны дараа Харилцагчийн үйлчилгээний ажилтан (CSO) таны AMEP бүртгэлийг хийж, англи хэлний түвшинг тань шалгах Анхан шатны үнэлгээнд (Initial Assessment) цаг товлоно.",
+"my": "သင်၏ အရည်အချင်းပြည့်မီမှု အတည်ပြုပြီးနောက် ဖောက်သည်ဝန်ဆောင်မှုအရာရှိ (CSO) က သင်၏ AMEP စာရင်းသွင်းမှုကို ပြီးစီးစေပြီး သင့်အင်္ဂလိပ်စာအဆင့်ကို စစ်ဆေးရန် ကနဦးအကဲဖြတ်ခြင်း (Initial Assessment) ကို ချိန်းဆိုပေးပါမည်။",
+"km": "បន្ទាប់ពីសិទ្ធិរបស់អ្នកត្រូវបានបញ្ជាក់ មន្ត្រីសេវាអតិថិជន (CSO) នឹងបញ្ចប់ការចុះឈ្មោះ AMEP របស់អ្នក ហើយកក់ពេលឱ្យអ្នកធ្វើការវាយតម្លៃដំបូង (Initial Assessment) ដើម្បីតេស្តកម្រិតភាសាអង់គ្លេសរបស់អ្នក។",
+"th": "เมื่อยืนยันคุณสมบัติของคุณแล้ว เจ้าหน้าที่บริการลูกค้า (CSO) จะลงทะเบียน AMEP ให้คุณ และนัดหมายการประเมินเบื้องต้น (Initial Assessment) เพื่อทดสอบระดับภาษาอังกฤษของคุณ",
+"vi": "Khi điều kiện của bạn được xác nhận, Nhân viên Dịch vụ Khách hàng (CSO) sẽ hoàn tất đăng ký AMEP và đặt lịch Đánh giá Ban đầu (Initial Assessment) để kiểm tra trình độ tiếng Anh của bạn.",
+"id": "Setelah kelayakan Anda dikonfirmasi, Petugas Layanan Pelanggan (CSO) akan menyelesaikan pendaftaran AMEP Anda dan menjadwalkan Penilaian Awal (Initial Assessment) untuk menguji tingkat bahasa Inggris Anda.",
+"hi": "आपकी पात्रता की पुष्टि होने के बाद, ग्राहक सेवा अधिकारी (CSO) आपका AMEP पंजीकरण पूरा करेंगे और आपकी अंग्रेज़ी का स्तर जाँचने के लिए प्रारंभिक मूल्यांकन (Initial Assessment) बुक करेंगे।",
+"ne": "तपाईंको योग्यता पुष्टि भएपछि, ग्राहक सेवा अधिकृत (CSO) ले तपाईंको AMEP दर्ता पूरा गर्नुहुनेछ र तपाईंको अंग्रेजी तह जाँच्न प्रारम्भिक मूल्याङ्कन (Initial Assessment) बुक गरिदिनुहुनेछ।",
+"pa": "ਤੁਹਾਡੀ ਯੋਗਤਾ ਦੀ ਪੁਸ਼ਟੀ ਹੋਣ ਤੋਂ ਬਾਅਦ, ਗਾਹਕ ਸੇਵਾ ਅਧਿਕਾਰੀ (CSO) ਤੁਹਾਡੀ AMEP ਰਜਿਸਟ੍ਰੇਸ਼ਨ ਪੂਰੀ ਕਰੇਗਾ ਅਤੇ ਤੁਹਾਡੀ ਅੰਗਰੇਜ਼ੀ ਦਾ ਪੱਧਰ ਜਾਂਚਣ ਲਈ ਸ਼ੁਰੂਆਤੀ ਮੁਲਾਂਕਣ (Initial Assessment) ਬੁੱਕ ਕਰੇਗਾ।",
+"ta": "உங்கள் தகுதி உறுதிசெய்யப்பட்டதும், வாடிக்கையாளர் சேவை அலுவலர் (CSO) உங்கள் AMEP பதிவை முடித்து, உங்கள் ஆங்கில நிலையைச் சோதிக்க தொடக்க மதிப்பீட்டை (Initial Assessment) முன்பதிவு செய்வார்.",
+"ru": "После подтверждения вашего права на обучение специалист по обслуживанию клиентов (CSO) оформит вашу регистрацию в AMEP и запишет вас на начальную оценку (Initial Assessment) для проверки уровня английского.",
+"uk": "Після підтвердження вашого права на навчання фахівець з обслуговування клієнтів (CSO) оформить вашу реєстрацію в AMEP і запише вас на початкове оцінювання (Initial Assessment), щоб перевірити ваш рівень англійської.",
+"es": "Una vez confirmados tus requisitos, el Oficial de Atención al Cliente (CSO) completará tu inscripción en el AMEP y te reservará una Evaluación Inicial (Initial Assessment) para medir tu nivel de inglés.",
+"pt": "Assim que sua elegibilidade for confirmada, o Atendente (CSO) concluirá sua inscrição no AMEP e agendará sua Avaliação Inicial (Initial Assessment) para testar seu nível de inglês.",
+"sw": "Baada ya ustahiki wako kuthibitishwa, Afisa wa Huduma kwa Wateja (CSO) atakamilisha usajili wako wa AMEP na kukupangia Tathmini ya Awali (Initial Assessment) ili kupima kiwango chako cha Kiingereza.",
+"ti": "ብቕዓትኩም ምስ ተረጋገጸ፡ ሰራሕተኛ ኣገልግሎት ዓማዊል (CSO) ምዝገባ AMEP ኹም ክውድእ እሞ፡ ደረጃ እንግሊዝኛኹም ንምፍታን ቆጸራ ቀዳማይ ገምጋም (Initial Assessment) ክሕዘልኩም እዩ።",
+}
+assert len(S3) == 28
+for k, v in S3.items():
+    out[k]['s3_d'] = v
+json.dump(out, open('y_steps.json', 'w', encoding='utf-8'), ensure_ascii=False, indent=0)
+print('step 3 updated')
