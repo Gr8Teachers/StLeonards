@@ -52,3 +52,11 @@ html[lang="en"] .prog .pt small{display:none}
 t = t.replace('</style>', CSS + '</style>', 1)
 open(p, 'w', encoding='utf-8').write(t)
 print('St Leonards programs section added')
+
+# St Leonards: remove the two "find out more" buttons (covered by the programs section)
+import re as _re
+t = open(p, encoding='utf-8').read()
+t2 = _re.sub(r'      <p class="more">\n.*?      </p>\n', '', t, count=1, flags=_re.S)
+assert t2 != t, 'more buttons not found'
+open(p, 'w', encoding='utf-8').write(t2)
+print('find-out-more buttons removed')
