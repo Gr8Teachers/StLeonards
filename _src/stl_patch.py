@@ -74,3 +74,31 @@ QR_CSS = '''
 t = t.replace('</style>', QR_CSS.replace('{{QRW}}', '230') + '</style>', 1)
 open(p, 'w', encoding='utf-8').write(t)
 print('print QR enlarged')
+
+# St Leonards: transport lines under the address; on print, address block fills right side of info-day card
+t = open(p, encoding='utf-8').read()
+TRAIN = '<svg viewBox="0 0 24 24"><path d="M12 2c-4 0-8 .5-8 4v9.5A3.5 3.5 0 0 0 7.5 19L6 20.5v.5h12v-.5L16.5 19a3.5 3.5 0 0 0 3.5-3.5V6c0-3.5-4-4-8-4zM7.5 17a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm3.5-7H6V6h5zm2 0V6h5v4zm3.5 7a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/></svg>'
+BUS = '<svg viewBox="0 0 24 24"><path d="M4 16c0 .9.4 1.7 1 2.2V20a1 1 0 0 0 1 1h1a1 1 0 0 0 1-1v-1h8v1a1 1 0 0 0 1 1h1a1 1 0 0 0 1-1v-1.8c.6-.5 1-1.3 1-2.2V6c0-3.5-3.6-4-8-4s-8 .5-8 4zm3.5 1a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm9 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zM18 11H6V6h12z"/></svg>'
+old = '<p>{{dc_where}}</p>'
+assert old in t
+t = t.replace(old, '<div class="dc-loc"><p>{{dc_where}}</p>'
+    + f'\n        <p class="walk">{TRAIN}<span>{{{{tr1}}}}</span></p>'
+    + f'\n        <p class="walk">{TRAIN}<span>{{{{tr2}}}}</span></p>'
+    + f'\n        <p class="walk">{BUS}<span>{{{{tr3}}}}</span></p></div>', 1)
+CSS2 = '''
+/* St Leonards transport lines */
+.date-card p.walk{display:flex;align-items:center;gap:.45em;margin-top:4px;font-weight:600;color:#fff}
+.date-card p.walk svg{width:1.1em;height:1.1em;fill:currentColor;flex:none}
+.date-card p.walk span{min-width:0;overflow-wrap:break-word}
+.dc-loc > p:first-child{margin-bottom:4px}
+@media print{
+  .dc-main{display:grid;grid-template-columns:auto 1fr;column-gap:26px;align-items:center}
+  .dc-main > .dc-eyebrow,.dc-main > h2,.dc-main > .dc-row{grid-column:1}
+  .dc-main > .dc-loc{grid-column:2;grid-row:1 / span 3;border-inline-start:1.5px solid rgba(255,255,255,.35);padding-inline-start:24px;align-self:stretch;display:flex;flex-direction:column;justify-content:center}
+  .dc-loc p{font-size:1.2rem !important;line-height:1.35;color:#fff !important}
+  .dc-loc p.walk{font-size:1.12rem !important;margin-top:6px}
+}
+'''
+t = t.replace('</style>', CSS2 + '</style>', 1)
+open(p, 'w', encoding='utf-8').write(t)
+print('transport lines added')
