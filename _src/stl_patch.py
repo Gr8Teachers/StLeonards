@@ -131,3 +131,21 @@ CSS2 = """
 t = t.replace('</style>', CSS2 + '</style>', 1)
 open(p, 'w', encoding='utf-8').write(t)
 print('transport column added')
+
+# St Leonards: contact heading - smaller, each line on one line where it fits
+t = open(p, encoding='utf-8').read()
+assert '<h2>{{c_h1}}<br>{{c_h2}}</h2>' in t
+t = t.replace('<h2>{{c_h1}}<br>{{c_h2}}</h2>', '<h2><span class="hl">{{c_h1}}</span> <span class="hl">{{c_h2}}</span></h2>', 1)
+t = t.replace('</style>', '''
+.contact-box h2{font-size:clamp(1rem,4.6vw,1.8rem) !important;line-height:1.3}
+.contact-box h2 .hl{display:block}
+@media print{.contact-box h2{font-size:1.75rem !important}}
+</style>''', 1)
+open(p, 'w', encoding='utf-8').write(t)
+
+# St Leonards: enquiry button on one line on phones
+t = open(p, encoding='utf-8').read()
+t = t.replace('</style>', '''
+@media (max-width:620px){.msform{padding:28px 18px}.msform-btn{white-space:nowrap;font-size:clamp(.85rem,4.2vw,1.1rem);padding:.85em 1.2em;max-width:100%}html[lang="ta"] .msform-btn,html[lang="es"] .msform-btn{white-space:normal}}
+</style>''', 1)
+open(p, 'w', encoding='utf-8').write(t)

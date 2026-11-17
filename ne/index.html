@@ -367,6 +367,12 @@ html[lang="en"] .prog .pt small{display:none}
   html[lang="ps"] .dc-loc p.walk,html[lang="ta"] .dc-loc p.walk{white-space:normal;overflow-wrap:anywhere}
   html[lang="ta"] .dc-side{min-width:0;max-width:260px}
 }
+
+.contact-box h2{font-size:clamp(1rem,4.6vw,1.8rem) !important;line-height:1.3}
+.contact-box h2 .hl{display:block}
+@media print{.contact-box h2{font-size:1.75rem !important}}
+
+@media (max-width:620px){.msform{padding:28px 18px}.msform-btn{white-space:nowrap;font-size:clamp(.85rem,4.2vw,1.1rem);padding:.85em 1.2em;max-width:100%}html[lang="ta"] .msform-btn,html[lang="es"] .msform-btn{white-space:normal}}
 </style>
 </head>
 <body>
@@ -509,7 +515,7 @@ html[lang="en"] .prog .pt small{display:none}
   <section id="contact">
     <div class="wrap contact">
       <div class="contact-box">
-        <h2>सूचना दिवसमा आउन सक्नुहुन्न?<br>हामीलाई सम्पर्क गर्नुहोस् वा सिधै आउनुहोस्!</h2>
+        <h2><span class="hl">सूचना दिवसमा आउन सक्नुहुन्न?</span> <span class="hl">हामीलाई सम्पर्क गर्नुहोस् वा सिधै आउनुहोस्!</span></h2>
         <p>हाम्रो टोली तपाईंका प्रश्नहरूको जवाफ दिन खुसी छ।</p>
         <ul class="cl">
           <li><span class="ci"><svg viewBox="0 0 24 24"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.3 0 .7-.2 1z"/></svg></span><div><small>फोन</small><a href="tel:+61279206475" dir="ltr">7920 6475</a></div></li>
