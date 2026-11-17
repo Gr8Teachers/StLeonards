@@ -118,6 +118,7 @@ FORM_JS = '''
 
 # ---- Switched to Microsoft Forms (embedded on screen, QR code on print) ----
 MSFORM_URL = "https://forms.office.com/r/xY44v3tmUZ"
+MSFORM_EMBED = "https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=InJTGddVgUWE-8LaboNcdI723fir1b5Po48Qf5Q6vgZUQ0lXT1hHWTlUVTFISUZRRFg2Q0hXN1IxSS4u&amp;embed=true"
 FORM_HTML = ''   # FormSubmit form removed
 FORM_JS = ''
 MSFORM_HTML = '''      <div class="qr-box print-qr">
@@ -130,7 +131,7 @@ MSFORM_HTML = '''      <div class="qr-box print-qr">
           <div class="icon"><svg viewBox="0 0 24 24"><path d="M2 5h20v14H2zm2 2v.5l8 5 8-5V7l-8 5z"/></svg></div>
           <div><h3>{{form_h}}</h3><p>{{form_sub}}</p></div>
         </div>
-        <iframe src="''' + MSFORM_URL + '''?embed=true" title="{{form_h}}" loading="lazy" allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen></iframe>
+        <iframe src="''' + MSFORM_EMBED + '''" title="{{form_h}}" loading="lazy" allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen></iframe>
         <a class="msform-open" href="''' + MSFORM_URL + '''" target="_blank" rel="noopener">{{f_open}} <span aria-hidden="true">&#8599;</span></a>
       </div>'''
 MSFORM_CSS = '''
