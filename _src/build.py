@@ -1,6 +1,6 @@
 import json, os, re, glob, html, sys
 
-ROOT = os.path.dirname(os.path.abspath(__file__))  # _src folder
+ROOT = os.path.dirname(os.path.abspath(__file__))
 OUT = sys.argv[1] if len(sys.argv) > 1 else os.path.join(ROOT, 'site')
 
 # folder, html lang, dir, native name, English name
@@ -42,7 +42,8 @@ for f in glob.glob(os.path.join(ROOT, 'langs', '*.json')):
     d = json.load(open(f, encoding='utf-8'))
     if os.path.basename(f) == 'en.json':
         continue
-    trans.update(d)
+    for lk, lv in d.items():
+        trans.setdefault(lk, {}).update(lv)
 
 zoom = json.load(open(os.path.join(ROOT, 'zoom.json'))) if os.path.exists(os.path.join(ROOT, 'zoom.json')) else {}
 only = os.environ.get('ONLY')
@@ -82,6 +83,7 @@ for folder, code, d, native, eng in LANGS:
     page = page.replace('{{PATH}}', '' if not folder else '/' + folder)
     page = page.replace('{{ZOOM}}', str(zoom.get(folder or 'en', 0.86)))
     page = page.replace('{{LANG_ITEMS}}', lang_items(folder))
+    page = page.replace('{{JS_LANG}}', json.dumps(eng if folder else 'English')).replace('{{JS_SENDING}}', json.dumps(html.unescape(s['f_sending']))).replace('{{JS_ERROR}}', json.dumps(html.unescape(s['f_error'])))
     page = page.replace('{{CAL_CLS}}', ' sm' if s.get('cal_sm') else '')
     for k, v in s.items():
         val = v
