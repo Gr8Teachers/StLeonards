@@ -17,6 +17,8 @@ def apply_more(path):
 .more .btn{font-size:1.02rem;padding:.8em 1.6em;white-space:normal;text-align:center;justify-content:center;max-width:100%}
 @media (max-width:620px){.more .btn{width:100%}}
 @media print{.more{display:none !important}}
+/* Hero title on one line where it fits */
+.hero h1{max-width:none}
 '''
     t = t.replace('</style>', css + '</style>', 1)
     open(path, 'w', encoding='utf-8').write(t)
