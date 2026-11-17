@@ -150,3 +150,29 @@ MSFORM_CSS = '''
 @media (max-width:620px){.msform{padding:16px}.msform iframe{height:1250px}}
 @media print{.print-qr{display:flex !important}.msform{display:none !important}}
 '''
+
+# ---- Link card instead of embedded form ----
+MSFORM_HTML = '''      <div class="qr-box print-qr">
+        <img src="{{A}}assets/qr.png" alt="QR code">
+        <h3>{{qr_h}}</h3>
+        <p>{{qr_p}}</p>
+      </div>
+      <div class="msform" id="enquiry">
+        <div class="icon big"><svg viewBox="0 0 24 24"><path d="M19 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2zm-9 14H7v-2h3zm0-4H7v-2h3zm0-4H7V7h3zm7 8h-5v-2h5zm0-4h-5v-2h5zm0-4h-5V7h5z"/></svg></div>
+        <h3>{{form_h}}</h3>
+        <p>{{form_sub}}</p>
+        <a class="btn btn-red msform-btn" href="''' + MSFORM_URL + '''" target="_blank" rel="noopener">{{f_btn}} <span aria-hidden="true">&#8599;</span></a>
+      </div>'''
+MSFORM_CSS = '''
+/* Enquiry link card (screen) / QR code (print) */
+.print-qr{display:none}
+.contact{grid-template-columns:1.4fr 1fr;align-items:stretch}
+.msform{background:#fff;border:1px solid var(--line);border-top:5px solid var(--red);border-radius:var(--radius);padding:36px 32px;box-shadow:0 12px 40px rgba(20,30,50,.08);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:6px}
+.msform .icon.big{width:72px;height:72px;border-radius:18px;margin:0 0 10px}
+.msform .icon.big svg{width:36px;height:36px}
+.msform h3{font-size:1.6rem;font-weight:700;line-height:1.2}
+.msform p{color:var(--muted);font-size:1.05rem;max-width:360px}
+.msform-btn{margin-top:18px;font-size:1.1rem;padding:.9em 1.8em;white-space:normal;text-align:center}
+@media (max-width:900px){.contact{grid-template-columns:1fr}}
+@media print{.print-qr{display:flex !important}.msform{display:none !important}}
+'''

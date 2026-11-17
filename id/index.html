@@ -222,19 +222,16 @@ h1,h2,h3,.pill,.btn{overflow-wrap:break-word}
   .hero .btn,.date-card .btn,#enqBtn{white-space:normal;text-align:center}
 }
 
-/* Embedded Microsoft Form (screen) / QR code (print) */
+/* Enquiry link card (screen) / QR code (print) */
 .print-qr{display:none}
-.contact{grid-template-columns:1fr 1.25fr;align-items:start}
-.msform{background:#fff;border:1px solid var(--line);border-top:5px solid var(--red);border-radius:var(--radius);padding:24px;box-shadow:0 12px 40px rgba(20,30,50,.08)}
-.msform-head{display:flex;gap:14px;align-items:flex-start;margin-bottom:14px}
-.msform-head .icon{margin:0;flex:none}
-.msform-head h3{font-size:1.5rem;font-weight:700;line-height:1.2}
-.msform-head p{color:var(--muted);margin-top:4px}
-.msform iframe{display:block;width:100%;height:1050px;border:0;border-radius:10px;background:var(--bg)}
-.msform-open{display:inline-block;margin-top:12px;color:var(--red);font-weight:600;text-decoration:none}
-.msform-open:hover{text-decoration:underline}
-@media (max-width:900px){.contact{grid-template-columns:1fr}.msform iframe{height:1150px}}
-@media (max-width:620px){.msform{padding:16px}.msform iframe{height:1250px}}
+.contact{grid-template-columns:1.4fr 1fr;align-items:stretch}
+.msform{background:#fff;border:1px solid var(--line);border-top:5px solid var(--red);border-radius:var(--radius);padding:36px 32px;box-shadow:0 12px 40px rgba(20,30,50,.08);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:6px}
+.msform .icon.big{width:72px;height:72px;border-radius:18px;margin:0 0 10px}
+.msform .icon.big svg{width:36px;height:36px}
+.msform h3{font-size:1.6rem;font-weight:700;line-height:1.2}
+.msform p{color:var(--muted);font-size:1.05rem;max-width:360px}
+.msform-btn{margin-top:18px;font-size:1.1rem;padding:.9em 1.8em;white-space:normal;text-align:center}
+@media (max-width:900px){.contact{grid-template-columns:1fr}}
 @media print{.print-qr{display:flex !important}.msform{display:none !important}}
 
 /* ---------- Print: one-page A4 flyer ---------- */
@@ -438,12 +435,10 @@ h1,h2,h3,.pill,.btn{overflow-wrap:break-word}
         <p>Pindai dengan kamera ponsel Anda untuk informasi lebih lanjut.</p>
       </div>
       <div class="msform" id="enquiry">
-        <div class="msform-head">
-          <div class="icon"><svg viewBox="0 0 24 24"><path d="M2 5h20v14H2zm2 2v.5l8 5 8-5V7l-8 5z"/></svg></div>
-          <div><h3>Formulir pertanyaan online</h3><p>Tinggalkan data Anda, tim kami akan menghubungi Anda.</p></div>
-        </div>
-        <iframe src="https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=InJTGddVgUWE-8LaboNcdI723fir1b5Po48Qf5Q6vgZUQ0lXT1hHWTlUVTFISUZRRFg2Q0hXN1IxSS4u&amp;embed=true" title="Formulir pertanyaan online" loading="lazy" allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen></iframe>
-        <a class="msform-open" href="https://forms.office.com/r/xY44v3tmUZ" target="_blank" rel="noopener">Formulir tidak muncul? Buka di tab baru <span aria-hidden="true">&#8599;</span></a>
+        <div class="icon big"><svg viewBox="0 0 24 24"><path d="M19 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2zm-9 14H7v-2h3zm0-4H7v-2h3zm0-4H7V7h3zm7 8h-5v-2h5zm0-4h-5v-2h5zm0-4h-5V7h5z"/></svg></div>
+        <h3>Formulir pertanyaan online</h3>
+        <p>Tinggalkan data Anda, tim kami akan menghubungi Anda.</p>
+        <a class="btn btn-red msform-btn" href="https://forms.office.com/r/xY44v3tmUZ" target="_blank" rel="noopener">Buka formulir pertanyaan <span aria-hidden="true">&#8599;</span></a>
       </div>
     </div>
   </section>

@@ -10,6 +10,6 @@ The published pages (index.html and the language folders) are generated from the
 To change the info day date or time, update `date_heading`, `cal_*`, `time`, `s1_d` and `meta_desc` in every language file, then rebuild.
 
 ## Enquiry form
-The website embeds the Microsoft Form https://forms.office.com/r/xY44v3tmUZ (set in
+The website links (button) to the Microsoft Form https://forms.office.com/r/xY44v3tmUZ (set in
 `form_patch.py` as MSFORM_URL). Printed pages show the QR code instead. To change the
 form, update MSFORM_URL, run `make_template.py`, then rebuild.
